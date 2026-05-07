@@ -29,6 +29,25 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,10,46,0.9
 .photo-box{width:320px;height:380px;border-radius:24px;background:linear-gradient(135deg,var(--teal),var(--primary));display:flex;align-items:center;justify-content:center;font-size:6rem;}
 .photo-badge{position:absolute;bottom:-20px;right:20px;background:var(--orange);color:#fff;padding:1rem 1.2rem;border-radius:16px;text-align:center;font-weight:700;font-size:0.85rem;line-height:1.4;box-shadow:0 8px 24px rgba(245,166,35,0.4);}
 .photo-badge span{display:block;font-size:1.5rem;}
+
+/* TUTOR SECTION */
+.tutor-section{margin-top:5rem;background:#fff;border-radius:24px;padding:2.5rem;box-shadow:0 4px 20px rgba(0,0,0,0.06);}
+.tutor-section h3{font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:900;color:var(--primary);margin-bottom:0.5rem;}
+.tutor-section p{font-size:0.95rem;color:var(--gray);line-height:1.8;margin-bottom:2rem;max-width:700px;}
+.tutor-links{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-bottom:2rem;}
+.tutor-link{display:flex;align-items:center;gap:0.75rem;background:var(--light);border-radius:14px;padding:1rem 1.2rem;text-decoration:none;color:var(--primary);font-weight:600;font-size:0.9rem;transition:all 0.3s;border:2px solid transparent;}
+.tutor-link:hover{border-color:var(--teal);transform:translateY(-2px);}
+.tutor-link .link-icon{font-size:1.5rem;}
+.tutor-link span{font-size:0.75rem;color:var(--gray);display:block;font-weight:400;}
+.gumroad-btn{display:inline-flex;align-items:center;gap:0.75rem;background:var(--teal);color:var(--primary);padding:0.85rem 2rem;border-radius:50px;text-decoration:none;font-weight:700;font-size:0.95rem;transition:all 0.3s;}
+.gumroad-btn:hover{background:var(--orange);transform:translateY(-2px);}
+
+/* CONTACT LINKS */
+.contact-links{margin-top:3rem;background:var(--primary);border-radius:24px;padding:2rem 2.5rem;display:flex;flex-wrap:wrap;gap:1.5rem;align-items:center;justify-content:space-between;}
+.contact-links h3{font-size:1.1rem;font-weight:700;color:var(--white);width:100%;margin-bottom:0.5rem;}
+.contact-link{display:flex;align-items:center;gap:0.5rem;color:rgba(255,255,255,0.8);text-decoration:none;font-size:0.9rem;transition:color 0.3s;}
+.contact-link:hover{color:var(--teal);}
+
 .stats{background:var(--primary);padding:3rem 2rem;margin-top:5rem;}
 .stats-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;text-align:center;}
 .stat-num{font-family:'Playfair Display',serif;font-size:2.5rem;font-weight:900;color:var(--teal);}
@@ -57,7 +76,7 @@ footer span{color:var(--teal);}
     <div class="about-text">
       <p>I am <strong>Regan Ayiecho</strong>, a Software Engineering student at the African Leadership University (ALU) in Kigali, Rwanda — driven by an unshakeable belief that African youth deserve access to world-class opportunities.</p>
       <p>My journey has been defined by persistence. I have secured <strong>20+ scholarships</strong>, founded two organizations, and built communities that empower others to chase their potential without limits.</p>
-      <p>I combine technical skills in software engineering with deep expertise in scholarship research, grant writing, and community building — creating impact that bridges education, technology and opportunity across Africa.</p>
+      <p>I also serve as an <strong>online AI and Mathematics tutor</strong> on YouTube and TikTok — breaking down complex concepts into simple, practical lessons for African students. My lessons are available for purchase on Gumroad.</p>
       <div class="highlights">
         <div class="highlight">
           <div class="highlight-icon">🎓</div>
@@ -90,8 +109,50 @@ footer span{color:var(--teal);}
       </div>
     </div>
   </div>
+
+  <!-- TUTOR SECTION -->
+  <div class="tutor-section">
+    <h3>🎓 Online AI & Maths Tutor</h3>
+    <p>I teach AI and Mathematics to students across Africa through YouTube and TikTok — making quality education accessible, practical and engaging. Want to learn at your own pace? Purchase my lessons on Gumroad and start your journey today!</p>
+    <div class="tutor-links">
+      <a href="https://www.youtube.com/@Prof.AyiechoRegan" target="_blank" class="tutor-link">
+        <div class="link-icon">▶️</div>
+        <div>
+          <strong>YouTube</strong>
+          <span>AI & Maths Tutorials</span>
+        </div>
+      </a>
+      <a href="https://www.tiktok.com/@regancomedian" target="_blank" class="tutor-link">
+        <div class="link-icon">🎵</div>
+        <div>
+          <strong>TikTok</strong>
+          <span>Quick Lessons & Tips</span>
+        </div>
+      </a>
+      <a href="https://www.linkedin.com/in/reganayiecho" target="_blank" class="tutor-link">
+        <div class="link-icon">💼</div>
+        <div>
+          <strong>LinkedIn</strong>
+          <span>Professional Profile</span>
+        </div>
+      </a>
+    </div>
+    <a href="https://lnkd.in/dK4RCRcB" target="_blank" class="gumroad-btn">
+      🛒 Buy My Lessons on Gumroad
+    </a>
+  </div>
+
+  <!-- CONTACT LINKS -->
+  <div class="contact-links">
+    <h3>📬 Get In Touch Directly</h3>
+    <a href="mailto:odhiamboregan@gmail.com" class="contact-link">📧 odhiamboregan@gmail.com</a>
+    <a href="tel:+254791887609" class="contact-link">📞 +254 791 887 609</a>
+    <a href="https://www.linkedin.com/in/reganayiecho" target="_blank" class="contact-link">💼 linkedin.com/in/reganayiecho</a>
+  </div>
+
 </div>
 
+<!-- STATS -->
 <div class="stats">
   <div class="stats-inner">
     <div>
