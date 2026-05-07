@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Regan Ayiecho | Contact</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #0A0A2E;
+      --teal: #00D4AA;
+      --orange: #F5A623;
+      --white: #FFFFFF;
+      --light: #F8F9FF;
+      --gray: #6B7280;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--light);
+      color: var(--primary);
+      overflow-x: hidden;
+    }
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      background: rgba(10,10,46,0.97);
+      backdrop-filter: blur(12px);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .nav-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--teal);
+      letter-spacing: 1px;
+    }
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+    .nav-links a {
+      color: rgba(255,255,255,0.8);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: color 0.3s;
+      letter-spacing: 0.5px;
+    }
+    .nav-links a:hover { color: var(--teal); }
+    .nav-links a.active { color: var(--teal); }
+    section {
+      padding: 8rem 2rem 5rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .section-tag {
+      display: inline-block;
+      background: rgba(0,212,170,0.1);
+      color: var(--teal);
+      padding: 0.4rem 1rem;
+      border-radius: 50px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      margin-bottom: 1rem;
+    }
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 900;
+      margin-bottom: 2rem;
+      color: var(--primary);
+    }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      margin-top: 2rem;
+    }
+    .contact-info h3 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: var(--primary);
+    }
+    .contact-info p {
+      color: var(--gray);
+      line-height: 1.8;
+      margin-bottom: 2rem;
+    }
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.2rem;
+    }
+    .contact-icon {
+      width: 44px; height: 44px;
+      background: rgba(0,212,170,0.1);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+    }
+    .contact-item a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.95rem;
+    }
+    .contact-item a:hover { color: var(--teal); }
+    .contact-card {
+      background: var(--primary);
+      border-radius: 24px;
+      padding: 2.5rem;
+      color: var(--white);
+    }
+    .contact-card h3 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: var(--teal);
+    }
+    .contact-card p {
+      color: rgba(255,255,255,0.7);
+      line-height: 1.8;
+      margin-bottom: 2rem;
+    }
+    .btn-primary {
+      background: var(--teal);
+      color: var(--primary);
+      padding: 0.85rem 2rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.95rem;
+      transition: all 0.3s;
+      display: inline-block;
+    }
+    .btn-primary:hover { background: var(--orange); transform: translateY(-2px); }
+    footer {
+      background: var(--primary);
+      color: rgba(255,255,255,0.5);
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      margin-top: 4rem;
+    }
+    footer span { color: var(--teal); }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">Regan Ayiecho</div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="skills.html">Skills</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
+</nav>
+
+<section>
+  <span class="section-tag">Let's Connect</span>
+  <h2 class="section-title">Contact Me</h2>
+  <div class="contact-grid">
+    <div class="contact-info">
+      <h3>Get in Touch</h3>
+      <p>Whether you want to collaborate, support OOAI, or just connect — I would love to hear from you.</p>
+      <div class="contact-item">
+        <div class="contact-icon">📧</div>
+        <a href="mailto:odhiamboregan6440@gmail.com">odhiamboregan6440@gmail.com</a>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">💼</div>
+        <a href="https://linkedin.com/in/reganayiecho" target="_blank">linkedin.com/in/reganayiecho</a>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">📍</div>
+        <span style="font-weight:500;font-size:0.95rem;">Kigali, Rwanda</span>
+      </div>
+    </div>
+    <div class="contact-card">
+      <h3>Open to Opportunities</h3>
+      <p>I am open to collaborations, partnerships, mentorship opportunities and conversations about education in Africa.</p>
+      <a href="mailto:odhiamboregan6440@gmail.com" class="btn-primary">Send a Message</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 <span>Regan Ayiecho</span> · Built with purpose · Powered by persistence 🌍</p>
+</footer>
+
+</body>
+</html>
