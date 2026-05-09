@@ -6,154 +6,66 @@
   <title>Regan Ayiecho | Contact</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --primary: #0A0A2E;
-      --teal: #00D4AA;
-      --orange: #F5A623;
-      --white: #FFFFFF;
-      --light: #F8F9FF;
-      --gray: #6B7280;
-    }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: 'DM Sans', sans-serif;
-      background: var(--light);
-      color: var(--primary);
-      overflow-x: hidden;
-    }
-    nav {
-      position: fixed;
-      top: 0; left: 0; right: 0;
-      z-index: 100;
-      background: rgba(10,10,46,0.97);
-      backdrop-filter: blur(12px);
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .nav-logo {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.4rem;
-      font-weight: 700;
-      color: var(--teal);
-      letter-spacing: 1px;
-    }
-    .nav-links {
-      display: flex;
-      gap: 2rem;
-      list-style: none;
-    }
-    .nav-links a {
-      color: rgba(255,255,255,0.8);
-      text-decoration: none;
-      font-size: 0.9rem;
-      font-weight: 500;
-      transition: color 0.3s;
-      letter-spacing: 0.5px;
-    }
-    .nav-links a:hover { color: var(--teal); }
-    .nav-links a.active { color: var(--teal); }
-    section {
-      padding: 8rem 2rem 5rem;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    .section-tag {
-      display: inline-block;
-      background: rgba(0,212,170,0.1);
-      color: var(--teal);
-      padding: 0.4rem 1rem;
-      border-radius: 50px;
-      font-size: 0.8rem;
-      font-weight: 600;
-      letter-spacing: 1px;
-      margin-bottom: 1rem;
-    }
-    .section-title {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(2rem, 4vw, 3rem);
-      font-weight: 900;
-      margin-bottom: 2rem;
-      color: var(--primary);
-    }
-    .contact-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 3rem;
-      margin-top: 2rem;
-    }
-    .contact-info h3 {
-      font-size: 1.3rem;
-      font-weight: 700;
-      margin-bottom: 1rem;
-      color: var(--primary);
-    }
-    .contact-info p {
-      color: var(--gray);
-      line-height: 1.8;
-      margin-bottom: 2rem;
-    }
-    .contact-item {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      margin-bottom: 1.2rem;
-    }
-    .contact-icon {
-      width: 44px; height: 44px;
-      background: rgba(0,212,170,0.1);
-      border-radius: 12px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.2rem;
-    }
-    .contact-item a {
-      color: var(--primary);
-      text-decoration: none;
-      font-weight: 500;
-      font-size: 0.95rem;
-    }
-    .contact-item a:hover { color: var(--teal); }
-    .contact-card {
-      background: var(--primary);
-      border-radius: 24px;
-      padding: 2.5rem;
-      color: var(--white);
-    }
-    .contact-card h3 {
-      font-size: 1.3rem;
-      font-weight: 700;
-      margin-bottom: 1rem;
-      color: var(--teal);
-    }
-    .contact-card p {
-      color: rgba(255,255,255,0.7);
-      line-height: 1.8;
-      margin-bottom: 2rem;
-    }
-    .btn-primary {
-      background: var(--teal);
-      color: var(--primary);
-      padding: 0.85rem 2rem;
-      border-radius: 50px;
-      text-decoration: none;
-      font-weight: 700;
-      font-size: 0.95rem;
-      transition: all 0.3s;
-      display: inline-block;
-    }
-    .btn-primary:hover { background: var(--orange); transform: translateY(-2px); }
-    footer {
-      background: var(--primary);
-      color: rgba(255,255,255,0.5);
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
-      margin-top: 4rem;
-    }
-    footer span { color: var(--teal); }
+    :root{--primary:#0A0A2E;--teal:#00D4AA;--orange:#F5A623;--white:#FFFFFF;--light:#F8F9FF;--gray:#6B7280;}
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{font-family:'DM Sans',sans-serif;background:var(--light);color:var(--primary);}
+    nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,10,46,0.97);backdrop-filter:blur(12px);padding:1rem 2rem;display:flex;justify-content:space-between;align-items:center;}
+    .nav-logo{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700;color:var(--teal);letter-spacing:1px;}
+    .nav-links{display:flex;gap:2rem;list-style:none;}
+    .nav-links a{color:rgba(255,255,255,0.8);text-decoration:none;font-size:0.9rem;font-weight:500;transition:color 0.3s;}
+    .nav-links a:hover,.nav-links a.active{color:var(--teal);}
+    .page-hero{background:var(--primary);padding:8rem 2rem 4rem;text-align:center;}
+    .page-hero-tag{display:inline-block;background:rgba(0,212,170,0.15);color:var(--teal);padding:0.4rem 1rem;border-radius:50px;font-size:0.8rem;font-weight:600;letter-spacing:1px;margin-bottom:1rem;}
+    .page-hero h1{font-family:'Playfair Display',serif;font-size:clamp(2.5rem,6vw,4.5rem);font-weight:900;color:var(--white);margin-bottom:1rem;}
+    .page-hero h1 span{color:var(--teal);}
+    .page-hero p{font-size:1rem;color:rgba(255,255,255,0.7);max-width:600px;margin:0 auto;}
+    .section-tag{display:inline-block;background:rgba(0,212,170,0.1);color:var(--teal);padding:0.4rem 1rem;border-radius:50px;font-size:0.8rem;font-weight:600;letter-spacing:1px;margin-bottom:1rem;}
+    .section-title{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4vw,2.8rem);font-weight:900;margin-bottom:1rem;color:var(--primary);}
+    /* SERVICES CTA */
+    .services-cta{background:var(--teal);padding:3rem 2rem;}
+    .services-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;}
+    .service-item{background:rgba(255,255,255,0.2);border-radius:16px;padding:1.5rem;text-align:center;}
+    .service-icon{font-size:2rem;margin-bottom:0.75rem;}
+    .service-title{font-size:0.95rem;font-weight:700;color:var(--primary);margin-bottom:0.4rem;}
+    .service-desc{font-size:0.82rem;color:rgba(10,10,46,0.7);line-height:1.6;}
+    /* CONTACT GRID */
+    .contact-section{padding:5rem 2rem;max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:4rem;}
+    .contact-info h2{font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:900;color:var(--primary);margin-bottom:1rem;}
+    .contact-info p{color:var(--gray);line-height:1.8;margin-bottom:2rem;font-size:0.95rem;}
+    .contact-item{display:flex;align-items:center;gap:1rem;margin-bottom:1.2rem;background:#fff;border-radius:12px;padding:1rem 1.2rem;box-shadow:0 2px 12px rgba(0,0,0,0.06);}
+    .contact-icon{width:44px;height:44px;background:rgba(0,212,170,0.1);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0;}
+    .contact-item a,.contact-item span{color:var(--primary);text-decoration:none;font-weight:500;font-size:0.9rem;}
+    .contact-item a:hover{color:var(--teal);}
+    /* FORM */
+    .contact-form{background:#fff;border-radius:24px;padding:2.5rem;box-shadow:0 4px 20px rgba(0,0,0,0.06);}
+    .contact-form h3{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:900;color:var(--primary);margin-bottom:0.5rem;}
+    .contact-form p{font-size:0.85rem;color:var(--gray);margin-bottom:1.5rem;}
+    .form-group{margin-bottom:1.25rem;}
+    .form-group label{display:block;font-size:0.82rem;font-weight:600;color:var(--primary);margin-bottom:0.4rem;letter-spacing:0.5px;}
+    .form-group input,.form-group textarea,.form-group select{width:100%;background:var(--light);border:1.5px solid rgba(0,212,170,0.2);color:var(--primary);padding:0.8rem 1rem;border-radius:10px;font-family:'DM Sans',sans-serif;font-size:0.9rem;outline:none;transition:border-color 0.2s;}
+    .form-group input:focus,.form-group textarea:focus,.form-group select:focus{border-color:var(--teal);}
+    .form-group textarea{resize:vertical;min-height:120px;}
+    .btn-submit{width:100%;padding:0.9rem;background:var(--teal);color:var(--primary);font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;border:none;border-radius:50px;cursor:pointer;transition:background 0.2s;}
+    .btn-submit:hover{background:var(--orange);}
+    /* SOCIALS */
+    .socials{background:var(--primary);padding:4rem 2rem;text-align:center;}
+    .socials-inner{max-width:1000px;margin:0 auto;}
+    .socials-inner .section-title{color:var(--white);}
+    .socials-inner .section-tag{background:rgba(0,212,170,0.15);}
+    .social-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:2.5rem;}
+    .social-card{background:rgba(255,255,255,0.05);border:1px solid rgba(0,212,170,0.15);border-radius:16px;padding:1.5rem;text-decoration:none;transition:all 0.3s;display:block;}
+    .social-card:hover{background:rgba(255,255,255,0.08);border-color:var(--teal);transform:translateY(-3px);}
+    .social-icon{font-size:2rem;margin-bottom:0.75rem;}
+    .social-name{font-size:0.9rem;font-weight:700;color:var(--white);margin-bottom:0.25rem;}
+    .social-handle{font-size:0.78rem;color:var(--teal);}
+    /* FAQ */
+    .faq{padding:5rem 2rem;max-width:1000px;margin:0 auto;}
+    .faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:3rem;}
+    .faq-item{background:#fff;border-radius:16px;padding:1.5rem;box-shadow:0 2px 12px rgba(0,0,0,0.06);border-left:4px solid var(--teal);}
+    .faq-q{font-size:0.92rem;font-weight:700;color:var(--primary);margin-bottom:0.5rem;}
+    .faq-a{font-size:0.83rem;color:var(--gray);line-height:1.7;}
+    footer{background:var(--primary);color:rgba(255,255,255,0.5);text-align:center;padding:2rem;font-size:0.9rem;border-top:1px solid rgba(255,255,255,0.05);}
+    footer span{color:var(--teal);}
   </style>
 </head>
 <body>
@@ -169,37 +81,174 @@
   </ul>
 </nav>
 
-<section>
-  <span class="section-tag">Let's Connect</span>
-  <h2 class="section-title">Contact Me</h2>
-  <div class="contact-grid">
-    <div class="contact-info">
-      <h3>Get in Touch</h3>
-      <p>Whether you want to collaborate, support OOAI, or just connect — I would love to hear from you.</p>
-      <div class="contact-item">
-        <div class="contact-icon">📧</div>
-        <a href="mailto:odhiamboregan6440@gmail.com">odhiamboregan6440@gmail.com</a>
-      </div>
-      <div class="contact-item">
-        <div class="contact-icon">💼</div>
-        <a href="https://linkedin.com/in/reganayiecho" target="_blank">linkedin.com/in/reganayiecho</a>
-      </div>
-      <div class="contact-item">
-        <div class="contact-icon">📍</div>
-        <span style="font-weight:500;font-size:0.95rem;">Kigali, Rwanda</span>
-      </div>
+<div class="page-hero">
+  <span class="page-hero-tag">Let's Connect</span>
+  <h1>Get In <span>Touch</span></h1>
+  <p>Whether you need a website, tutoring, scholarship guidance or just want to connect — I would love to hear from you.</p>
+</div>
+
+<!-- SERVICES CTA -->
+<div class="services-cta">
+  <div class="services-inner">
+    <div class="service-item">
+      <div class="service-icon">🌐</div>
+      <div class="service-title">Website Development</div>
+      <div class="service-desc">Need a website for your startup or personal brand? Let's build something great together.</div>
     </div>
-    <div class="contact-card">
-      <h3>Open to Opportunities</h3>
-      <p>I am open to collaborations, partnerships, mentorship opportunities and conversations about education in Africa.</p>
-      <a href="mailto:odhiamboregan6440@gmail.com" class="btn-primary">Send a Message</a>
+    <div class="service-item">
+      <div class="service-icon">🤖</div>
+      <div class="service-title">AI & Maths Tutoring</div>
+      <div class="service-desc">Book a tutoring session or purchase my lessons on Gumroad for self-paced learning.</div>
+    </div>
+    <div class="service-item">
+      <div class="service-icon">🏆</div>
+      <div class="service-title">Scholarship Coaching</div>
+      <div class="service-desc">Get expert guidance on scholarship applications from a Mastercard Foundation Scholar.</div>
     </div>
   </div>
-</section>
+</div>
+
+<!-- CONTACT -->
+<div class="contact-section">
+  <div class="contact-info">
+    <span class="section-tag">Direct Contact</span>
+    <h2>Let's Talk</h2>
+    <p>I am open to freelance projects, collaborations, mentorship requests, tutoring bookings and partnership opportunities. Reach out through any channel below!</p>
+    <div class="contact-item">
+      <div class="contact-icon">📧</div>
+      <a href="mailto:odhiamboregan@gmail.com">odhiamboregan@gmail.com</a>
+    </div>
+    <div class="contact-item">
+      <div class="contact-icon">📞</div>
+      <a href="tel:+254791887609">+254 791 887 609</a>
+    </div>
+    <div class="contact-item">
+      <div class="contact-icon">💼</div>
+      <a href="https://www.linkedin.com/in/reganayiecho" target="_blank">linkedin.com/in/reganayiecho</a>
+    </div>
+    <div class="contact-item">
+      <div class="contact-icon">▶️</div>
+      <a href="https://www.youtube.com/@Prof.AyiechoRegan" target="_blank">YouTube — AI & Maths Tutorials</a>
+    </div>
+    <div class="contact-item">
+      <div class="contact-icon">🎵</div>
+      <a href="https://www.tiktok.com/@regancomedian" target="_blank">TikTok — @regancomedian</a>
+    </div>
+    <div class="contact-item">
+      <div class="contact-icon">📍</div>
+      <span>Kigali, Rwanda · Originally from Kisumu, Kenya</span>
+    </div>
+  </div>
+  <div class="contact-form">
+    <h3>Send a Message</h3>
+    <p>Fill in the form and I'll get back to you within 24–48 hours.</p>
+    <form onsubmit="submitForm(event)">
+      <div class="form-group">
+        <label>Your Name</label>
+        <input type="text" placeholder="e.g. Amara Diallo" required>
+      </div>
+      <div class="form-group">
+        <label>Email Address</label>
+        <input type="email" placeholder="you@example.com" required>
+      </div>
+      <div class="form-group">
+        <label>What do you need?</label>
+        <select>
+          <option value="">Select a service...</option>
+          <option>Website Development</option>
+          <option>AI & Maths Tutoring</option>
+          <option>Scholarship Coaching</option>
+          <option>Collaboration / Partnership</option>
+          <option>General Inquiry</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Your Message</label>
+        <textarea placeholder="Tell me what you have in mind..." required></textarea>
+      </div>
+      <button type="submit" class="btn-submit" id="contactBtn">Send Message 🚀</button>
+    </form>
+  </div>
+</div>
+
+<!-- SOCIALS -->
+<div class="socials">
+  <div class="socials-inner">
+    <span class="section-tag">Find Me Online</span>
+    <h2 class="section-title">Social Media</h2>
+    <div class="social-grid">
+      <a href="https://www.linkedin.com/in/reganayiecho" target="_blank" class="social-card">
+        <div class="social-icon">💼</div>
+        <div class="social-name">LinkedIn</div>
+        <div class="social-handle">linkedin.com/in/reganayiecho</div>
+      </a>
+      <a href="https://www.youtube.com/@Prof.AyiechoRegan" target="_blank" class="social-card">
+        <div class="social-icon">▶️</div>
+        <div class="social-name">YouTube</div>
+        <div class="social-handle">@Prof.AyiechoRegan</div>
+      </a>
+      <a href="https://www.tiktok.com/@regancomedian" target="_blank" class="social-card">
+        <div class="social-icon">🎵</div>
+        <div class="social-name">TikTok</div>
+        <div class="social-handle">@regancomedian</div>
+      </a>
+      <a href="https://lnkd.in/dK4RCRcB" target="_blank" class="social-card">
+        <div class="social-icon">🛒</div>
+        <div class="social-name">Gumroad</div>
+        <div class="social-handle">Buy My Lessons</div>
+      </a>
+      <a href="https://github.com/rayiecho" target="_blank" class="social-card">
+        <div class="social-icon">💻</div>
+        <div class="social-name">GitHub</div>
+        <div class="social-handle">@rayiecho</div>
+      </a>
+      <a href="mailto:odhiamboregan@gmail.com" class="social-card">
+        <div class="social-icon">📧</div>
+        <div class="social-name">Email</div>
+        <div class="social-handle">odhiamboregan@gmail.com</div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- FAQ -->
+<div class="faq">
+  <span class="section-tag">Quick Answers</span>
+  <h2 class="section-title">FAQ</h2>
+  <div class="faq-grid">
+    <div class="faq-item">
+      <div class="faq-q">How much do you charge for a website?</div>
+      <div class="faq-a">Pricing depends on the complexity and requirements of the project. Reach out with your details and I will send you a custom quote.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">How do I book a tutoring session?</div>
+      <div class="faq-a">You can purchase self-paced lessons on Gumroad or contact me directly to schedule a one-on-one session via email or WhatsApp.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Can you help me apply for scholarships?</div>
+      <div class="faq-a">Yes! As a Mastercard Foundation Scholar and 2-year Eaal Foundation mentor, I offer scholarship coaching — from finding opportunities to writing your personal statement.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">How quickly do you respond?</div>
+      <div class="faq-a">I typically respond within 24–48 hours. For urgent matters, WhatsApp is the fastest way to reach me at +254 791 887 609.</div>
+    </div>
+  </div>
+</div>
 
 <footer>
   <p>© 2026 <span>Regan Ayiecho</span> · Built with purpose · Powered by persistence 🌍</p>
 </footer>
 
+<script>
+function submitForm(e){
+  e.preventDefault();
+  const btn=document.getElementById('contactBtn');
+  btn.textContent='✓ Message Sent!';
+  btn.style.background='#2d7a2d';
+  btn.style.color='#fff';
+  setTimeout(()=>{btn.textContent='Send Message 🚀';btn.style.background='';btn.style.color='';},3000);
+  e.target.reset();
+}
+</script>
 </body>
 </html>

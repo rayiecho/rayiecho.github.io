@@ -6,122 +6,56 @@
   <title>Regan Ayiecho | Skills</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --primary: #0A0A2E;
-      --teal: #00D4AA;
-      --orange: #F5A623;
-      --white: #FFFFFF;
-      --light: #F8F9FF;
-      --gray: #6B7280;
-    }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: 'DM Sans', sans-serif;
-      background: var(--light);
-      color: var(--primary);
-      overflow-x: hidden;
-    }
-    nav {
-      position: fixed;
-      top: 0; left: 0; right: 0;
-      z-index: 100;
-      background: rgba(10,10,46,0.97);
-      backdrop-filter: blur(12px);
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .nav-logo {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.4rem;
-      font-weight: 700;
-      color: var(--teal);
-      letter-spacing: 1px;
-    }
-    .nav-links {
-      display: flex;
-      gap: 2rem;
-      list-style: none;
-    }
-    .nav-links a {
-      color: rgba(255,255,255,0.8);
-      text-decoration: none;
-      font-size: 0.9rem;
-      font-weight: 500;
-      transition: color 0.3s;
-      letter-spacing: 0.5px;
-    }
-    .nav-links a:hover { color: var(--teal); }
-    .nav-links a.active { color: var(--teal); }
-    section {
-      padding: 8rem 2rem 5rem;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    .section-tag {
-      display: inline-block;
-      background: rgba(0,212,170,0.1);
-      color: var(--teal);
-      padding: 0.4rem 1rem;
-      border-radius: 50px;
-      font-size: 0.8rem;
-      font-weight: 600;
-      letter-spacing: 1px;
-      margin-bottom: 1rem;
-    }
-    .section-title {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(2rem, 4vw, 3rem);
-      font-weight: 900;
-      margin-bottom: 1rem;
-      color: var(--primary);
-    }
-    .section-desc {
-      font-size: 1rem;
-      color: var(--gray);
-      max-width: 600px;
-      line-height: 1.8;
-      margin-bottom: 3rem;
-    }
-    .skills-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 2rem;
-    }
-    .skill-card {
-      background: var(--white);
-      border-radius: 20px;
-      padding: 2rem;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
-      transition: transform 0.3s;
-    }
-    .skill-card:hover { transform: translateY(-4px); }
-    .skill-icon { font-size: 2.5rem; margin-bottom: 1rem; }
-    .skill-card h3 {
-      font-size: 1.1rem;
-      font-weight: 700;
-      color: var(--primary);
-      margin-bottom: 1rem;
-    }
-    .skill-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
-    .skill-tag {
-      background: rgba(0,212,170,0.1);
-      color: var(--primary);
-      padding: 0.35rem 0.85rem;
-      border-radius: 50px;
-      font-size: 0.8rem;
-      font-weight: 500;
-    }
-    footer {
-      background: var(--primary);
-      color: rgba(255,255,255,0.5);
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
-      margin-top: 4rem;
-    }
-    footer span { color: var(--teal); }
+    :root{--primary:#0A0A2E;--teal:#00D4AA;--orange:#F5A623;--white:#FFFFFF;--light:#F8F9FF;--gray:#6B7280;}
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{font-family:'DM Sans',sans-serif;background:var(--light);color:var(--primary);}
+    nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,10,46,0.97);backdrop-filter:blur(12px);padding:1rem 2rem;display:flex;justify-content:space-between;align-items:center;}
+    .nav-logo{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700;color:var(--teal);letter-spacing:1px;}
+    .nav-links{display:flex;gap:2rem;list-style:none;}
+    .nav-links a{color:rgba(255,255,255,0.8);text-decoration:none;font-size:0.9rem;font-weight:500;transition:color 0.3s;}
+    .nav-links a:hover,.nav-links a.active{color:var(--teal);}
+    .page-hero{background:var(--primary);padding:8rem 2rem 4rem;text-align:center;}
+    .page-hero-tag{display:inline-block;background:rgba(0,212,170,0.15);color:var(--teal);padding:0.4rem 1rem;border-radius:50px;font-size:0.8rem;font-weight:600;letter-spacing:1px;margin-bottom:1rem;}
+    .page-hero h1{font-family:'Playfair Display',serif;font-size:clamp(2.5rem,6vw,4.5rem);font-weight:900;color:var(--white);margin-bottom:1rem;}
+    .page-hero h1 span{color:var(--teal);}
+    .page-hero p{font-size:1rem;color:rgba(255,255,255,0.7);max-width:600px;margin:0 auto;}
+    .section-tag{display:inline-block;background:rgba(0,212,170,0.1);color:var(--teal);padding:0.4rem 1rem;border-radius:50px;font-size:0.8rem;font-weight:600;letter-spacing:1px;margin-bottom:1rem;}
+    .section-title{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4vw,2.8rem);font-weight:900;margin-bottom:1rem;color:var(--primary);}
+    /* SKILLS */
+    .skills-section{padding:5rem 2rem;max-width:1200px;margin:0 auto;}
+    .skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:3rem;}
+    .skill-card{background:#fff;border-radius:20px;padding:2rem;box-shadow:0 4px 20px rgba(0,0,0,0.06);transition:transform 0.3s;}
+    .skill-card:hover{transform:translateY(-4px);}
+    .skill-icon{font-size:2.5rem;margin-bottom:1rem;}
+    .skill-card h3{font-size:1.05rem;font-weight:700;color:var(--primary);margin-bottom:1rem;}
+    .skill-tags{display:flex;flex-wrap:wrap;gap:0.5rem;}
+    .skill-tag{background:rgba(0,212,170,0.1);color:var(--primary);padding:0.35rem 0.85rem;border-radius:50px;font-size:0.78rem;font-weight:500;}
+    /* EXPERIENCE BARS */
+    .exp-section{background:#fff;padding:5rem 2rem;}
+    .exp-inner{max-width:1200px;margin:0 auto;}
+    .exp-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;margin-top:3rem;}
+    .exp-item{margin-bottom:1.5rem;}
+    .exp-header{display:flex;justify-content:space-between;margin-bottom:0.5rem;}
+    .exp-name{font-size:0.9rem;font-weight:600;color:var(--primary);}
+    .exp-level{font-size:0.82rem;color:var(--teal);font-weight:600;}
+    .exp-bar{height:8px;background:rgba(0,212,170,0.15);border-radius:50px;overflow:hidden;}
+    .exp-fill{height:100%;background:linear-gradient(90deg,var(--teal),var(--orange));border-radius:50px;transition:width 1s ease;}
+    /* TRAINING */
+    .training{padding:5rem 2rem;max-width:1200px;margin:0 auto;}
+    .training-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;margin-top:3rem;}
+    .training-card{background:#fff;border-radius:16px;padding:1.5rem;box-shadow:0 2px 12px rgba(0,0,0,0.06);display:flex;gap:1rem;align-items:flex-start;border-left:4px solid var(--teal);}
+    .training-icon{font-size:1.8rem;flex-shrink:0;}
+    .training-name{font-size:0.95rem;font-weight:700;color:var(--primary);margin-bottom:0.2rem;}
+    .training-org{font-size:0.8rem;color:var(--teal);font-weight:600;margin-bottom:0.3rem;}
+    .training-desc{font-size:0.82rem;color:var(--gray);line-height:1.6;}
+    /* RESUME */
+    .resume-section{background:var(--primary);padding:4rem 2rem;text-align:center;}
+    .resume-section h2{font-family:'Playfair Display',serif;font-size:2rem;font-weight:900;color:var(--white);margin-bottom:1rem;}
+    .resume-section p{color:rgba(255,255,255,0.7);margin-bottom:2rem;line-height:1.8;max-width:600px;margin-left:auto;margin-right:auto;}
+    .btn-primary{background:var(--teal);color:var(--primary);padding:0.85rem 2rem;border-radius:50px;text-decoration:none;font-weight:700;font-size:0.95rem;transition:all 0.3s;display:inline-block;}
+    .btn-primary:hover{background:var(--orange);}
+    footer{background:var(--primary);color:rgba(255,255,255,0.5);text-align:center;padding:2rem;font-size:0.9rem;border-top:1px solid rgba(255,255,255,0.05);}
+    footer span{color:var(--teal);}
   </style>
 </head>
 <body>
@@ -137,21 +71,29 @@
   </ul>
 </nav>
 
-<section>
-  <span class="section-tag">What I Do</span>
-  <h2 class="section-title">Skills & Expertise</h2>
-  <p class="section-desc">A combination of technical, professional and human skills built through study, founding organizations and driving change across Africa.</p>
+<div class="page-hero">
+  <span class="page-hero-tag">What I Bring to the Table</span>
+  <h1>Skills & <span>Expertise</span></h1>
+  <p>A powerful combination of technical, professional and human skills built through university, certifications, teaching and real-world community impact.</p>
+</div>
+
+<!-- SKILLS GRID -->
+<div class="skills-section">
+  <span class="section-tag">My Skillset</span>
+  <h2 class="section-title">Core Skills</h2>
   <div class="skills-grid">
     <div class="skill-card">
       <div class="skill-icon">💻</div>
-      <h3>Professional Skills</h3>
+      <h3>Technical Skills</h3>
       <div class="skill-tags">
-        <span class="skill-tag">Software Engineering</span>
-        <span class="skill-tag">Project Management</span>
-        <span class="skill-tag">Scholarship Research</span>
-        <span class="skill-tag">Grant Writing</span>
-        <span class="skill-tag">Public Speaking</span>
-        <span class="skill-tag">Data Management</span>
+        <span class="skill-tag">HTML</span>
+        <span class="skill-tag">CSS</span>
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">Git & GitHub</span>
+        <span class="skill-tag">Web Development</span>
+        <span class="skill-tag">AI-Assisted Dev</span>
+        <span class="skill-tag">Vercel Deployment</span>
+        <span class="skill-tag">GitHub Pages</span>
       </div>
     </div>
     <div class="skill-card">
@@ -159,10 +101,36 @@
       <h3>AI Tools</h3>
       <div class="skill-tags">
         <span class="skill-tag">ChatGPT</span>
-        <span class="skill-tag">Claude</span>
+        <span class="skill-tag">Claude AI</span>
         <span class="skill-tag">Canva AI</span>
         <span class="skill-tag">Google Gemini</span>
         <span class="skill-tag">NotebookLM</span>
+        <span class="skill-tag">Gamma AI</span>
+        <span class="skill-tag">AI Prompting</span>
+      </div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">📢</div>
+      <h3>Professional Skills</h3>
+      <div class="skill-tags">
+        <span class="skill-tag">Digital Marketing</span>
+        <span class="skill-tag">Project Management</span>
+        <span class="skill-tag">Grant Writing</span>
+        <span class="skill-tag">Scholarship Research</span>
+        <span class="skill-tag">Public Speaking</span>
+        <span class="skill-tag">Content Creation</span>
+      </div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">🎓</div>
+      <h3>Teaching & Mentoring</h3>
+      <div class="skill-tags">
+        <span class="skill-tag">Mathematics</span>
+        <span class="skill-tag">AI Education</span>
+        <span class="skill-tag">Online Tutoring</span>
+        <span class="skill-tag">Curriculum Design</span>
+        <span class="skill-tag">Scholarship Coaching</span>
+        <span class="skill-tag">Youth Mentorship</span>
       </div>
     </div>
     <div class="skill-card">
@@ -175,17 +143,129 @@
         <span class="skill-tag">Persistence</span>
         <span class="skill-tag">Entrepreneurship</span>
         <span class="skill-tag">Community Building</span>
+        <span class="skill-tag">Adaptability</span>
+      </div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">🌍</div>
+      <h3>Languages</h3>
+      <div class="skill-tags">
+        <span class="skill-tag">English — Fluent</span>
+        <span class="skill-tag">Swahili — Native</span>
+        <span class="skill-tag">Luo — Native</span>
       </div>
     </div>
   </div>
-  <div style="margin-top:3rem;background:#fff;border-radius:20px;padding:2rem;box-shadow:0 4px 20px rgba(0,0,0,0.06);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1.5rem;">
-  <div>
-    <h3 style="font-size:1.1rem;font-weight:700;color:var(--primary);margin-bottom:0.5rem;">📄 My Resume</h3>
-    <p style="font-size:0.9rem;color:var(--gray);line-height:1.7;max-width:500px;">Want to know more about my experience, education and achievements? Download my full resume to get a complete picture of who I am and what I bring to the table.</p>
-  </div>
-  <a href="https://drive.google.com/file/d/1wx26T_3dHhIlmdoY8n5NzT7QJezS1pwj/view?usp=sharing" target="_blank" style="background:var(--teal);color:var(--primary);padding:0.85rem 2rem;border-radius:50px;text-decoration:none;font-weight:700;font-size:0.95rem;white-space:nowrap;">⬇️ Download Resume</a>
 </div>
-</section>
+
+<!-- EXPERIENCE LEVELS -->
+<div class="exp-section">
+  <div class="exp-inner">
+    <span class="section-tag">Proficiency</span>
+    <h2 class="section-title">Skill Levels</h2>
+    <div class="exp-grid">
+      <div>
+        <div class="exp-item">
+          <div class="exp-header"><span class="exp-name">HTML & CSS</span><span class="exp-level">Advanced</span></div>
+          <div class="exp-bar"><div class="exp-fill" style="width:85%"></div></div>
+        </div>
+        <div class="exp-item">
+          <div class="exp-header"><span class="exp-name">JavaScript</span><span class="exp-level">Intermediate</span></div>
+          <div class="exp-bar"><div class="exp-fill" style="width:60%"></div></div>
+        </div>
+        <div class="exp-item">
+          <div class="exp-header"><span class="exp-name">AI Tools</span><span class="exp-level">Advanced</span></div>
+          <div class="exp-bar"><div class="exp-fill" style="width:90%"></div></div>
+        </div>
+        <div class="exp-item">
+          <div class="exp-header"><span class="exp-name">Git & GitHub</span><span class="exp-level">Intermediate</span></div>
+          <div class="exp-bar"><div class="exp-fill" style="width:70%"></div></div>
+        </div>
+      </div>
+      <div>
+        <div class="exp-item">
+          <div class="exp-header"><span class="exp-name">Public Speaking</span><span class="exp-level">Advanced</span></div>
+          <div class="exp-bar"><div class="exp-fill" style="width:88%"></div></div>
+        </div>
+        <div class="exp-item">
+          <div class="exp-header"><span class="exp-name">Digital Marketing</span><span class="exp-level">Intermediate</span></div>
+          <div class="exp-bar"><div class="exp-fill" style="width:72%"></div></div>
+        </div>
+        <div class="exp-item">
+          <div class="exp-header"><span class="exp-name">Mathematics Teaching</span><span class="exp-level">Advanced</span></div>
+          <div class="exp-bar"><div class="exp-fill" style="width:92%"></div></div>
+        </div>
+        <div class="exp-item">
+          <div class="exp-header"><span class="exp-name">Scholarship Coaching</span><span class="exp-level">Expert</span></div>
+          <div class="exp-bar"><div class="exp-fill" style="width:95%"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TRAINING -->
+<div class="training">
+  <span class="section-tag">Education & Training</span>
+  <h2 class="section-title">Where I Learned</h2>
+  <div class="training-grid">
+    <div class="training-card">
+      <div class="training-icon">🎓</div>
+      <div>
+        <div class="training-name">BSc Software Engineering</div>
+        <div class="training-org">African Leadership University · Kigali, Rwanda</div>
+        <div class="training-desc">Pursuing a Bachelor's degree in Software Engineering on a full Mastercard Foundation Scholarship. 2024–Present.</div>
+      </div>
+    </div>
+    <div class="training-card">
+      <div class="training-icon">🤖</div>
+      <div>
+        <div class="training-name">AI Career Essentials 2.0</div>
+        <div class="training-org">ALX Africa</div>
+        <div class="training-desc">6-week intensive program covering AI tools, applications and career strategies. Certified April 2026.</div>
+      </div>
+    </div>
+    <div class="training-card">
+      <div class="training-icon">🏛️</div>
+      <div>
+        <div class="training-name">Professional Foundations</div>
+        <div class="training-org">African Leadership University</div>
+        <div class="training-desc">Comprehensive foundations program covering leadership, teamwork, communication and professional development. Completed 2025.</div>
+      </div>
+    </div>
+    <div class="training-card">
+      <div class="training-icon">⚖️</div>
+      <div>
+        <div class="training-name">Healers of Africa Program</div>
+        <div class="training-org">PLO Lumumba Foundation</div>
+        <div class="training-desc">3-month intensive leadership and civic engagement training program focused on African development and governance.</div>
+      </div>
+    </div>
+    <div class="training-card">
+      <div class="training-icon">🚀</div>
+      <div>
+        <div class="training-name">Upcoming Leaders Program</div>
+        <div class="training-org">Upcoming Leaders of Kenya</div>
+        <div class="training-desc">3-month youth leadership development program building the next generation of Kenyan leaders.</div>
+      </div>
+    </div>
+    <div class="training-card">
+      <div class="training-icon">➗</div>
+      <div>
+        <div class="training-name">Mathematics Teacher</div>
+        <div class="training-org">St. Joseph Ng'ula Primary School</div>
+        <div class="training-desc">1 year of classroom teaching experience — building strong communication, patience and pedagogical skills.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- RESUME -->
+<div class="resume-section">
+  <h2>📄 Download My Resume</h2>
+  <p>Want a complete picture of my experience, education, certifications and achievements? Download my full resume and let's explore how we can work together.</p>
+  <a href="https://drive.google.com/file/d/1wx26T_3dHhIlmdoY8n5NzT7QJezS1pwj/view?usp=sharing" target="_blank" class="btn-primary">⬇️ Download Resume</a>
+</div>
 
 <footer>
   <p>© 2026 <span>Regan Ayiecho</span> · Built with purpose · Powered by persistence 🌍</p>
