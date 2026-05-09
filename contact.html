@@ -21,14 +21,12 @@
     .page-hero p{font-size:1rem;color:rgba(255,255,255,0.7);max-width:600px;margin:0 auto;}
     .section-tag{display:inline-block;background:rgba(0,212,170,0.1);color:var(--teal);padding:0.4rem 1rem;border-radius:50px;font-size:0.8rem;font-weight:600;letter-spacing:1px;margin-bottom:1rem;}
     .section-title{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4vw,2.8rem);font-weight:900;margin-bottom:1rem;color:var(--primary);}
-    /* SERVICES CTA */
     .services-cta{background:var(--teal);padding:3rem 2rem;}
     .services-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;}
     .service-item{background:rgba(255,255,255,0.2);border-radius:16px;padding:1.5rem;text-align:center;}
     .service-icon{font-size:2rem;margin-bottom:0.75rem;}
     .service-title{font-size:0.95rem;font-weight:700;color:var(--primary);margin-bottom:0.4rem;}
     .service-desc{font-size:0.82rem;color:rgba(10,10,46,0.7);line-height:1.6;}
-    /* CONTACT GRID */
     .contact-section{padding:5rem 2rem;max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:4rem;}
     .contact-info h2{font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:900;color:var(--primary);margin-bottom:1rem;}
     .contact-info p{color:var(--gray);line-height:1.8;margin-bottom:2rem;font-size:0.95rem;}
@@ -36,7 +34,6 @@
     .contact-icon{width:44px;height:44px;background:rgba(0,212,170,0.1);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0;}
     .contact-item a,.contact-item span{color:var(--primary);text-decoration:none;font-weight:500;font-size:0.9rem;}
     .contact-item a:hover{color:var(--teal);}
-    /* FORM */
     .contact-form{background:#fff;border-radius:24px;padding:2.5rem;box-shadow:0 4px 20px rgba(0,0,0,0.06);}
     .contact-form h3{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:900;color:var(--primary);margin-bottom:0.5rem;}
     .contact-form p{font-size:0.85rem;color:var(--gray);margin-bottom:1.5rem;}
@@ -47,7 +44,6 @@
     .form-group textarea{resize:vertical;min-height:120px;}
     .btn-submit{width:100%;padding:0.9rem;background:var(--teal);color:var(--primary);font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;border:none;border-radius:50px;cursor:pointer;transition:background 0.2s;}
     .btn-submit:hover{background:var(--orange);}
-    /* SOCIALS */
     .socials{background:var(--primary);padding:4rem 2rem;text-align:center;}
     .socials-inner{max-width:1000px;margin:0 auto;}
     .socials-inner .section-title{color:var(--white);}
@@ -58,7 +54,6 @@
     .social-icon{font-size:2rem;margin-bottom:0.75rem;}
     .social-name{font-size:0.9rem;font-weight:700;color:var(--white);margin-bottom:0.25rem;}
     .social-handle{font-size:0.78rem;color:var(--teal);}
-    /* FAQ */
     .faq{padding:5rem 2rem;max-width:1000px;margin:0 auto;}
     .faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:3rem;}
     .faq-item{background:#fff;border-radius:16px;padding:1.5rem;box-shadow:0 2px 12px rgba(0,0,0,0.06);border-left:4px solid var(--teal);}
@@ -87,7 +82,6 @@
   <p>Whether you need a website, tutoring, scholarship guidance or just want to connect — I would love to hear from you.</p>
 </div>
 
-<!-- SERVICES CTA -->
 <div class="services-cta">
   <div class="services-inner">
     <div class="service-item">
@@ -108,7 +102,6 @@
   </div>
 </div>
 
-<!-- CONTACT -->
 <div class="contact-section">
   <div class="contact-info">
     <span class="section-tag">Direct Contact</span>
@@ -171,7 +164,6 @@
   </div>
 </div>
 
-<!-- SOCIALS -->
 <div class="socials">
   <div class="socials-inner">
     <span class="section-tag">Find Me Online</span>
@@ -211,7 +203,6 @@
   </div>
 </div>
 
-<!-- FAQ -->
 <div class="faq">
   <span class="section-tag">Quick Answers</span>
   <h2 class="section-title">FAQ</h2>
@@ -246,8 +237,12 @@ function submitForm(e){
   btn.textContent='✓ Message Sent!';
   btn.style.background='#2d7a2d';
   btn.style.color='#fff';
-  setTimeout(()=>{btn.textContent='Send Message 🚀';btn.style.background='';btn.style.color='';},3000);
-  e.target.reset();
+  setTimeout(()=>{
+    btn.textContent='Send Message 🚀';
+    btn.style.background='';
+    btn.style.color='';
+    e.target.reset(); // ← fixed: moved inside setTimeout
+  },3000);
 }
 </script>
 </body>
