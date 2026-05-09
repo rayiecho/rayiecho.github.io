@@ -6,147 +6,82 @@
   <title>Regan Ayiecho | Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --primary: #0A0A2E;
-      --teal: #00D4AA;
-      --orange: #F5A623;
-      --white: #FFFFFF;
-      --light: #F8F9FF;
-      --gray: #6B7280;
-    }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: 'DM Sans', sans-serif;
-      background: var(--primary);
-      color: var(--white);
-      overflow-x: hidden;
-    }
-    nav {
-      position: fixed;
-      top: 0; left: 0; right: 0;
-      z-index: 100;
-      background: rgba(10,10,46,0.97);
-      backdrop-filter: blur(12px);
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .nav-logo {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.4rem;
-      font-weight: 700;
-      color: var(--teal);
-      letter-spacing: 1px;
-    }
-    .nav-links {
-      display: flex;
-      gap: 2rem;
-      list-style: none;
-    }
-    .nav-links a {
-      color: rgba(255,255,255,0.8);
-      text-decoration: none;
-      font-size: 0.9rem;
-      font-weight: 500;
-      transition: color 0.3s;
-      letter-spacing: 0.5px;
-    }
-    .nav-links a:hover { color: var(--teal); }
-    .nav-links a.active { color: var(--teal); }
-    section {
-      padding: 8rem 2rem 5rem;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    .section-tag {
-      display: inline-block;
-      background: rgba(0,212,170,0.15);
-      color: var(--teal);
-      padding: 0.4rem 1rem;
-      border-radius: 50px;
-      font-size: 0.8rem;
-      font-weight: 600;
-      letter-spacing: 1px;
-      margin-bottom: 1rem;
-    }
-    .section-title {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(2rem, 4vw, 3rem);
-      font-weight: 900;
-      margin-bottom: 1rem;
-      color: var(--white);
-    }
-    .section-desc {
-      font-size: 1rem;
-      color: rgba(255,255,255,0.6);
-      max-width: 600px;
-      line-height: 1.8;
-      margin-bottom: 3rem;
-    }
-    .portfolio-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 2rem;
-    }
-    .portfolio-card {
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(255,255,255,0.1);
-      border-radius: 20px;
-      padding: 2rem;
-      transition: all 0.3s;
-    }
-    .portfolio-card:hover {
-      background: rgba(255,255,255,0.08);
-      transform: translateY(-4px);
-      border-color: rgba(0,212,170,0.3);
-    }
-    .portfolio-num {
-      font-family: 'Playfair Display', serif;
-      font-size: 3rem;
-      font-weight: 900;
-      color: rgba(0,212,170,0.2);
-      line-height: 1;
-      margin-bottom: 1rem;
-    }
-    .portfolio-card h3 {
-      font-size: 1.15rem;
-      font-weight: 700;
-      color: var(--white);
-      margin-bottom: 0.75rem;
-    }
-    .portfolio-card p {
-      font-size: 0.9rem;
-      color: rgba(255,255,255,0.6);
-      line-height: 1.8;
-      margin-bottom: 1.2rem;
-    }
-    .portfolio-link {
-      color: var(--teal);
-      text-decoration: none;
-      font-size: 0.9rem;
-      font-weight: 600;
-      transition: color 0.3s;
-    }
-    .portfolio-link:hover { color: var(--orange); }
-    .coming-soon {
-      display: inline-block;
-      background: rgba(245,166,35,0.15);
-      color: var(--orange);
-      padding: 0.3rem 0.85rem;
-      border-radius: 50px;
-      font-size: 0.8rem;
-      font-weight: 600;
-    }
-    footer {
-      background: rgba(0,0,0,0.3);
-      color: rgba(255,255,255,0.5);
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
-      margin-top: 4rem;
-    }
-    footer span { color: var(--teal); }
+    :root{--primary:#0A0A2E;--teal:#00D4AA;--orange:#F5A623;--white:#FFFFFF;--light:#F8F9FF;--gray:#6B7280;}
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{font-family:'DM Sans',sans-serif;background:var(--light);color:var(--primary);}
+    nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,10,46,0.97);backdrop-filter:blur(12px);padding:1rem 2rem;display:flex;justify-content:space-between;align-items:center;}
+    .nav-logo{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700;color:var(--teal);letter-spacing:1px;}
+    .nav-links{display:flex;gap:2rem;list-style:none;}
+    .nav-links a{color:rgba(255,255,255,0.8);text-decoration:none;font-size:0.9rem;font-weight:500;transition:color 0.3s;}
+    .nav-links a:hover,.nav-links a.active{color:var(--teal);}
+
+    /* PAGE HERO */
+    .page-hero{background:var(--primary);padding:8rem 2rem 4rem;text-align:center;}
+    .page-hero-tag{display:inline-block;background:rgba(0,212,170,0.15);color:var(--teal);padding:0.4rem 1rem;border-radius:50px;font-size:0.8rem;font-weight:600;letter-spacing:1px;margin-bottom:1rem;}
+    .page-hero h1{font-family:'Playfair Display',serif;font-size:clamp(2.5rem,6vw,4.5rem);font-weight:900;color:var(--white);margin-bottom:1rem;}
+    .page-hero h1 span{color:var(--teal);}
+    .page-hero p{font-size:1.1rem;color:rgba(255,255,255,0.7);max-width:600px;margin:0 auto;}
+
+    /* SECTION */
+    .section-tag{display:inline-block;background:rgba(0,212,170,0.1);color:var(--teal);padding:0.4rem 1rem;border-radius:50px;font-size:0.8rem;font-weight:600;letter-spacing:1px;margin-bottom:1rem;}
+    .section-title{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4vw,2.8rem);font-weight:900;margin-bottom:1rem;color:var(--primary);}
+
+    /* FEATURED PROJECT */
+    .featured{padding:5rem 2rem;max-width:1200px;margin:0 auto;}
+    .featured-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;margin-top:3rem;}
+    .featured-img{background:linear-gradient(135deg,var(--teal),var(--primary));border-radius:24px;min-height:320px;display:flex;align-items:center;justify-content:center;font-size:8rem;position:relative;overflow:hidden;}
+    .featured-badge{position:absolute;top:20px;left:20px;background:var(--orange);color:#fff;padding:0.4rem 1rem;border-radius:50px;font-size:0.75rem;font-weight:700;letter-spacing:1px;}
+    .featured-info h2{font-family:'Playfair Display',serif;font-size:clamp(1.5rem,3vw,2.2rem);font-weight:900;color:var(--primary);margin-bottom:0.75rem;}
+    .featured-meta{font-size:0.82rem;color:var(--teal);font-weight:600;letter-spacing:1px;text-transform:uppercase;margin-bottom:1rem;}
+    .featured-desc{font-size:0.95rem;line-height:1.9;color:#444;margin-bottom:1.5rem;}
+    .featured-tags{display:flex;flex-wrap:wrap;gap:0.5rem;margin-bottom:1.5rem;}
+    .tag{background:rgba(0,212,170,0.1);color:var(--primary);padding:0.3rem 0.85rem;border-radius:50px;font-size:0.78rem;font-weight:500;}
+    .btn-primary{background:var(--teal);color:var(--primary);padding:0.75rem 1.75rem;border-radius:50px;text-decoration:none;font-weight:700;font-size:0.9rem;transition:all 0.3s;display:inline-block;}
+    .btn-primary:hover{background:var(--orange);}
+    .btn-outline{border:2px solid var(--primary);color:var(--primary);padding:0.75rem 1.75rem;border-radius:50px;text-decoration:none;font-weight:600;font-size:0.9rem;transition:all 0.3s;display:inline-block;margin-left:0.75rem;}
+    .btn-outline:hover{border-color:var(--teal);color:var(--teal);}
+
+    /* PROJECTS GRID */
+    .projects{padding:3rem 2rem 5rem;max-width:1200px;margin:0 auto;}
+    .projects-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2rem;margin-top:3rem;}
+    .project-card{background:#fff;border-radius:20px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.06);transition:transform 0.3s;}
+    .project-card:hover{transform:translateY(-6px);}
+    .project-img{height:180px;display:flex;align-items:center;justify-content:center;font-size:4rem;position:relative;}
+    .project-num{position:absolute;top:16px;left:16px;font-family:'Playfair Display',serif;font-size:1rem;font-weight:900;color:rgba(255,255,255,0.5);}
+    .project-body{padding:1.5rem;}
+    .project-title{font-size:1.05rem;font-weight:700;color:var(--primary);margin-bottom:0.5rem;}
+    .project-desc{font-size:0.85rem;color:var(--gray);line-height:1.7;margin-bottom:1rem;}
+    .project-tags{display:flex;flex-wrap:wrap;gap:0.4rem;margin-bottom:1rem;}
+    .project-link{color:var(--teal);text-decoration:none;font-size:0.85rem;font-weight:600;transition:color 0.3s;}
+    .project-link:hover{color:var(--orange);}
+    .coming-soon{display:inline-block;background:rgba(245,166,35,0.15);color:var(--orange);padding:0.3rem 0.85rem;border-radius:50px;font-size:0.78rem;font-weight:600;}
+
+    /* COMMUNITY */
+    .community{background:var(--primary);padding:5rem 2rem;}
+    .community-inner{max-width:1200px;margin:0 auto;}
+    .community-inner .section-title{color:var(--white);}
+    .community-inner .section-tag{background:rgba(0,212,170,0.15);}
+    .community-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem;}
+    .community-card{background:rgba(255,255,255,0.05);border:1px solid rgba(0,212,170,0.2);border-radius:16px;padding:1.5rem;transition:all 0.3s;}
+    .community-card:hover{background:rgba(255,255,255,0.08);border-color:var(--teal);}
+    .community-icon{font-size:2rem;margin-bottom:1rem;}
+    .community-title{font-size:0.95rem;font-weight:700;color:var(--white);margin-bottom:0.25rem;}
+    .community-role{font-size:0.78rem;color:var(--teal);font-weight:600;margin-bottom:0.5rem;}
+    .community-desc{font-size:0.82rem;color:rgba(255,255,255,0.6);line-height:1.6;}
+
+    /* STATS */
+    .stats{background:var(--teal);padding:3rem 2rem;}
+    .stats-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;text-align:center;}
+    .stat-num{font-family:'Playfair Display',serif;font-size:2.5rem;font-weight:900;color:var(--primary);}
+    .stat-label{font-size:0.8rem;color:rgba(10,10,46,0.7);margin-top:0.25rem;font-weight:600;letter-spacing:1px;text-transform:uppercase;}
+
+    /* CTA */
+    .cta-section{padding:5rem 2rem;text-align:center;max-width:800px;margin:0 auto;}
+    .cta-section h2{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4vw,3rem);font-weight:900;color:var(--primary);margin-bottom:1rem;}
+    .cta-section p{color:var(--gray);font-size:1rem;margin-bottom:2rem;line-height:1.8;}
+
+    footer{background:var(--primary);color:rgba(255,255,255,0.5);text-align:center;padding:2rem;font-size:0.9rem;}
+    footer span{color:var(--teal);}
   </style>
 </head>
 <body>
@@ -162,37 +97,176 @@
   </ul>
 </nav>
 
-<section>
-  <span class="section-tag">My Work</span>
-  <h2 class="section-title">AI Portfolio</h2>
-  <p class="section-desc">Real projects built using AI tools to create impact across Africa.</p>
-  <div class="portfolio-grid">
-    <div class="portfolio-card">
-      <div class="portfolio-num">01</div>
-      <h3>AI for Africa Masterclass</h3>
-      <p>Designed and delivered a comprehensive AI Masterclass at ALU covering AI and Creativity, Transformation, Education and Jobs — with live demonstrations using ChatGPT and Canva AI.</p>
-      <a href="https://docs.google.com/presentation/d/1SuatYAAzfAWLP-6epB8KseSyBN0aoX_Xl7pG7Ro3rWo/edit?usp=sharing" target="_blank" class="portfolio-link">View Presentation →</a>
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <span class="page-hero-tag">Real Work · Real Impact</span>
+  <h1>My <span>Portfolio</span></h1>
+  <p>A collection of real projects, platforms and initiatives built with purpose — from websites for startups to community programs changing lives across Africa.</p>
+</div>
+
+<!-- FEATURED PROJECT -->
+<div class="featured">
+  <span class="section-tag">Featured Project</span>
+  <div class="featured-grid">
+    <div class="featured-img">
+      🎵
+      <div class="featured-badge">⭐ Live Project</div>
     </div>
-    <div class="portfolio-card">
-      <div class="portfolio-num">02</div>
-      <h3>Open Opportunity Access Initiative</h3>
-      <p>Founded a digital platform connecting less privileged but academically bright students across Africa to scholarship opportunities worldwide. 20 full scholarships secured since June 2025.</p>
-      <span class="coming-soon">Website coming soon</span>
-    </div>
-    <div class="portfolio-card">
-      <div class="portfolio-num">03</div>
-      <h3>Mbagathi Road Digital School</h3>
-      <p>Founded a digital skills training program equipping African youth aged 18–35 with entrepreneurship, digital literacy, critical thinking and communication skills.</p>
-      <span class="coming-soon">Website coming soon</span>
-    </div>
-    <div class="portfolio-card">
-      <div class="portfolio-num">04</div>
-      <h3>Youth Empowerment Grant Pitch</h3>
-      <p>Developed a professional 15-slide grant pitch presentation for the Youth Empowerment Fund 2026, applying for funding to scale OOAI across Africa.</p>
-      <span class="coming-soon">Link coming soon</span>
+    <div class="featured-info">
+      <h2>Blizcity Music Platform</h2>
+      <div class="featured-meta">Web Development · 2026 · Live</div>
+      <p class="featured-desc">A full multi-page music label website built for Blizcity — an African music platform. Features include a music catalogue, artist gallery, fan message board, and contact system. Built using HTML, CSS and JavaScript with AI-assisted development.</p>
+      <div class="featured-tags">
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">AI-Assisted</span>
+        <span class="tag">Multi-Page</span>
+      </div>
+      <a href="#" target="_blank" class="btn-primary">View Live Site</a>
+      <a href="https://github.com/rayiecho" target="_blank" class="btn-outline">GitHub</a>
     </div>
   </div>
-</section>
+</div>
+
+<!-- PROJECTS GRID -->
+<div class="projects">
+  <span class="section-tag">All Projects</span>
+  <h2 class="section-title">Work I Have Built</h2>
+  <div class="projects-grid">
+
+    <div class="project-card">
+      <div class="project-img" style="background:linear-gradient(135deg,#0A0A2E,#00D4AA);">
+        🌐
+        <div class="project-num">01</div>
+      </div>
+      <div class="project-body">
+        <div class="project-title">Goal-Driven Elabers</div>
+        <div class="project-desc">A team project website built during ALU Professional Foundations — a goal-tracking and accountability platform designed to help students stay focused and driven.</div>
+        <div class="project-tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">Team Project</span>
+          <span class="tag">ALU</span>
+        </div>
+        <a href="https://goal-driven-elabers.vercel.app/index.html" target="_blank" class="project-link">View Live Site →</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-img" style="background:linear-gradient(135deg,#F5A623,#0A0A2E);">
+        🤖
+        <div class="project-num">02</div>
+      </div>
+      <div class="project-body">
+        <div class="project-title">AI for Africa Masterclass</div>
+        <div class="project-desc">Designed and delivered a comprehensive AI Masterclass at ALU covering AI and Creativity, Transformation, Education and Jobs — with live demonstrations using ChatGPT and Canva AI.</div>
+        <div class="project-tags">
+          <span class="tag">AI</span>
+          <span class="tag">Education</span>
+          <span class="tag">Public Speaking</span>
+          <span class="tag">ALU</span>
+        </div>
+        <a href="https://docs.google.com/presentation/d/1SuatYAAzfAWLP-6epB8KseSyBN0aoX_Xl7pG7Ro3rWo/edit?usp=sharing" target="_blank" class="project-link">View Presentation →</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-img" style="background:linear-gradient(135deg,#00D4AA,#F5A623);">
+        👤
+        <div class="project-num">03</div>
+      </div>
+      <div class="project-body">
+        <div class="project-title">Personal Portfolio Website</div>
+        <div class="project-desc">This very website — a fully responsive multi-page personal portfolio built from scratch using HTML, CSS and Git. Hosted live on GitHub Pages.</div>
+        <div class="project-tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">GitHub Pages</span>
+          <span class="tag">Multi-Page</span>
+        </div>
+        <a href="https://rayiecho.github.io" target="_blank" class="project-link">View Live Site →</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-img" style="background:linear-gradient(135deg,#0A0A2E,#F5A623);">
+        🏆
+        <div class="project-num">04</div>
+      </div>
+      <div class="project-body">
+        <div class="project-title">Scholarship Coaching Program</div>
+        <div class="project-desc">A structured mentorship program run through Eaal Foundation — guiding students across Africa through scholarship applications, personal statements and interview preparation over 2+ years.</div>
+        <div class="project-tags">
+          <span class="tag">Mentorship</span>
+          <span class="tag">Education</span>
+          <span class="tag">Eaal Foundation</span>
+          <span class="tag">2+ Years</span>
+        </div>
+        <span class="coming-soon">Ongoing Program</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- COMMUNITY INITIATIVES -->
+<div class="community">
+  <div class="community-inner">
+    <span class="section-tag">Community Impact</span>
+    <h2 class="section-title">Initiatives & Organizations</h2>
+    <div class="community-grid">
+      <div class="community-card">
+        <div class="community-icon">🌍</div>
+        <div class="community-title">Young Africans Network</div>
+        <div class="community-role">Co-Founder · 2023–Present</div>
+        <div class="community-desc">An initiative bringing together young Africans for scholarship applications, career guidance, public speaking and digital skills training.</div>
+      </div>
+      <div class="community-card">
+        <div class="community-icon">🎬</div>
+        <div class="community-title">Eden Inspirations</div>
+        <div class="community-role">Founding Team Member · YouTube Channel</div>
+        <div class="community-desc">A YouTube channel hosting weekly guest interviews sharing journeys to success — inspiring African youth to pursue their dreams relentlessly.</div>
+      </div>
+      <div class="community-card">
+        <div class="community-icon">📢</div>
+        <div class="community-title">Nuruteck Platform</div>
+        <div class="community-role">Marketing Lead · 2024–Present</div>
+        <div class="community-desc">Leading digital marketing for Nuruteck — a platform offering digital skills training and development programs across Africa.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="stats-inner">
+    <div>
+      <div class="stat-num">3+</div>
+      <div class="stat-label">Websites Built</div>
+    </div>
+    <div>
+      <div class="stat-num">2+</div>
+      <div class="stat-label">Years Mentoring</div>
+    </div>
+    <div>
+      <div class="stat-num">6+</div>
+      <div class="stat-label">Organizations</div>
+    </div>
+    <div>
+      <div class="stat-num">2040</div>
+      <div class="stat-label">Impact Goal</div>
+    </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<div class="cta-section">
+  <h2>Want to Work Together?</h2>
+  <p>I am available for freelance web development, AI tutoring, scholarship coaching and community partnerships. Let's create something meaningful together.</p>
+  <a href="contact.html" class="btn-primary">Get In Touch</a>
+  <a href="https://drive.google.com/file/d/1wx26T_3dHhIlmdoY8n5NzT7QJezS1pwj/view?usp=sharing" target="_blank" class="btn-outline">⬇️ Download Resume</a>
+</div>
 
 <footer>
   <p>© 2026 <span>Regan Ayiecho</span> · Built with purpose · Powered by persistence 🌍</p>
