@@ -15,28 +15,28 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #060E08;
-      --bg2: #0A1410;
-      --bg3: #111C14;
+      --bg: #F4F1E8;
+      --bg2: #EDE9D8;
+      --bg3: #E5E1CE;
       --burgundy: #1B4332;
       --burgundy-light: #2D6A4F;
       --terracotta: #40916C;
       --terracotta-light: #52B788;
-      --gold: #D4A84B;
-      --gold-light: #E8C97A;
-      --cream: #F4F1E8;
-      --cream2: #EAE6D4;
-      --gray: #8A9E8E;
+      --gold: #C4860A;
+      --gold-light: #E8A820;
+      --cream: #1A2E1C;
+      --cream2: #2D4A30;
+      --gray: #5A7A5E;
       --white: #FAFAF8;
       --border: rgba(64,145,108,0.2);
-      --border2: rgba(64,145,108,0.08);
+      --border2: rgba(64,145,108,0.12);
     }
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
     html { scroll-behavior: smooth; }
     body {
       font-family: 'Outfit', sans-serif;
-      background: var(--bg);
-      color: var(--cream);
+      background: #F4F1E8;
+      color: #1A2E1C;
       overflow-x: hidden;
     }
 
@@ -80,7 +80,19 @@
     .nav-hamburger span { display: block; width: 24px; height: 2px; background: var(--gold); border-radius: 2px; }
 
     /* HERO */
+    .hero-bg {
+      position: relative;
+      min-height: 100vh;
+      background: url('images/hero1.jpeg') center center / cover no-repeat;
+    }
+    .hero-bg::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(120deg, rgba(15,26,17,0.82) 0%, rgba(27,67,50,0.65) 60%, rgba(15,26,17,0.4) 100%);
+      z-index: 1;
+    }
     .hero {
+      position: relative; z-index: 2;
       min-height: 100vh;
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -559,6 +571,7 @@
   </div>
 </nav>
 
+<div class="hero-bg">
 <section class="hero">
   <div class="hero-text">
     <div class="hero-eyebrow">
@@ -604,6 +617,7 @@
     </div>
   </div>
 </section>
+</div>
 
 <div class="ticker">
   <div class="ticker-inner">
