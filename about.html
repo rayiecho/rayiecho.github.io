@@ -1,154 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="google-site-verification" content="kf5GhSSPppO6mXDj7TpNJ_x4RZJtiB-A6KOhT7f7UNA" />
-  <!-- SEO META TAGS -->
-<meta name="description" content="Regan Odhiambo Ayiecho — Mastercard Foundation Scholar at ALU Kigali, Software Engineer, AI Specialist, Web Developer and Community Leader from Kisumu, Kenya.">
-<meta name="keywords" content="Regan Ayiecho, Regan Odhiambo, Ayiecho, ALU Kigali, Mastercard Foundation Scholar, Software Engineer Kenya, AI Specialist Africa, Web Developer Kenya, <a href="https://chat.whatsapp.com/LjJ64Gy4GVoJDjpyEVGFIO" target="_blank" style="color:var(--teal);">Young Africans Network</a>">
-<meta name="author" content="Regan Odhiambo Ayiecho">
-<meta name="robots" content="index, follow">
-
-<!-- OPEN GRAPH (for sharing on social media) -->
-<meta property="og:title" content="Regan Ayiecho | Software Engineer & AI Specialist">
-<meta property="og:description" content="Mastercard Foundation Scholar at ALU Kigali. Software Engineer, AI Specialist, Web Developer and Community Leader from Kisumu, Kenya.">
-<meta property="og:url" content="https://rayiecho.github.io">
-<meta property="og:type" content="website">
-
-<!-- GOOGLE VERIFICATION (we'll fill this later) -->
-<meta name="google-site-verification" content="<meta name="google-site-verification" content="kf5GhSSPppO6mXDj7TpNJ_x4RZJtiB-A6KOhT7f7UNA" />">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About Regan Odhiambo Ayiecho — Founder, Software Engineer, Mastercard Foundation Scholar and community builder from Kisumu, Kenya.">
+  <meta name="robots" content="index, follow">
   <title>Regan Ayiecho | About</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    :root{--primary:#0A0A2E;--teal:#00D4AA;--orange:#F5A623;--white:#FFFFFF;--light:#F8F9FF;--gray:#6B7280;}
-    *{margin:0;padding:0;box-sizing:border-box;}
-    body{font-family:'DM Sans',sans-serif;background:var(--light);color:var(--primary);}
-    nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,10,46,0.97);backdrop-filter:blur(12px);padding:1rem 2rem;display:flex;justify-content:space-between;align-items:center;}
-    .nav-logo{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700;color:var(--teal);letter-spacing:1px;}
-    .nav-links{display:flex;gap:2rem;list-style:none;}
-    .nav-links a{color:rgba(255,255,255,0.8);text-decoration:none;font-size:0.9rem;font-weight:500;transition:color 0.3s;}
-    .nav-links a:hover,.nav-links a.active{color:var(--teal);}
+    :root{--bg:#0D0806;--bg2:#120E0A;--bg3:#1A1410;--burgundy:#7C2D3E;--burgundy-light:#A03B50;--terracotta:#C4633A;--terracotta-light:#D4845E;--gold:#D4A84B;--gold-light:#E8C97A;--cream:#F5ECD7;--cream2:#EDE0C8;--gray:#9A8F85;--white:#FAFAF8;--border:rgba(212,168,75,0.15);--border2:rgba(212,168,75,0.08);}
+    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+    body{font-family:'Outfit',sans-serif;background:var(--bg);color:var(--cream);overflow-x:hidden;}
+    nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.25rem 3rem;display:flex;justify-content:space-between;align-items:center;background:rgba(13,8,6,0.85);backdrop-filter:blur(20px);border-bottom:1px solid var(--border2);}
+    .nav-logo{font-family:'Cormorant Garamond',serif;font-size:1.35rem;font-weight:700;color:var(--gold);letter-spacing:0.5px;text-decoration:none;}
+    .nav-links{display:flex;gap:2.5rem;list-style:none;}
+    .nav-links a{color:rgba(245,236,215,0.65);text-decoration:none;font-size:0.85rem;font-weight:500;letter-spacing:0.5px;transition:color 0.3s;}
+    .nav-links a:hover,.nav-links a.active{color:var(--gold);}
+    .nav-cta{background:transparent;border:1px solid var(--gold);color:var(--gold);padding:0.5rem 1.25rem;border-radius:2px;font-size:0.82rem;font-weight:600;letter-spacing:1px;text-transform:uppercase;text-decoration:none;transition:all 0.3s;}
+    .nav-cta:hover{background:var(--gold);color:var(--bg);}
+    .page-hero{background:var(--bg2);padding:9rem 3rem 5rem;border-bottom:1px solid var(--border2);}
+    .page-hero-inner{max-width:1300px;margin:0 auto;}
+    .section-label{font-size:0.72rem;letter-spacing:3px;text-transform:uppercase;color:var(--gold);font-weight:600;display:flex;align-items:center;gap:0.75rem;margin-bottom:1.5rem;}
+    .section-label::before{content:'';display:block;width:30px;height:1px;background:var(--gold);}
+    .page-hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(3rem,6vw,5.5rem);font-weight:700;color:var(--white);line-height:1.05;}
+    .page-hero h1 span{color:var(--gold);}
+    .page-hero-sub{font-size:1rem;color:rgba(245,236,215,0.55);margin-top:1rem;max-width:600px;line-height:1.8;}
+    .btn-primary{background:var(--gold);color:var(--bg);padding:0.85rem 2rem;font-size:0.85rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;text-decoration:none;border-radius:2px;transition:all 0.3s;display:inline-block;}
+    .btn-primary:hover{background:var(--terracotta);color:var(--white);}
+    .btn-outline{border:1px solid rgba(245,236,215,0.3);color:var(--cream);padding:0.85rem 2rem;font-size:0.85rem;font-weight:600;letter-spacing:1px;text-decoration:none;border-radius:2px;transition:all 0.3s;display:inline-block;}
+    .btn-outline:hover{border-color:var(--gold);color:var(--gold);}
 
-    /* PAGE HERO */
-    .page-hero{background:var(--primary);padding:8rem 2rem 4rem;text-align:center;}
-    .page-hero-tag{display:inline-block;background:rgba(0,212,170,0.15);color:var(--teal);padding:0.4rem 1rem;border-radius:50px;font-size:0.8rem;font-weight:600;letter-spacing:1px;margin-bottom:1rem;}
-    .page-hero h1{font-family:'Playfair Display',serif;font-size:clamp(2.5rem,6vw,4.5rem);font-weight:900;color:var(--white);margin-bottom:1rem;}
-    .page-hero h1 span{color:var(--teal);}
-    .page-hero p{font-size:1.1rem;color:rgba(255,255,255,0.7);max-width:600px;margin:0 auto;}
+    /* STORY */
+    .story{padding:6rem 3rem;max-width:1300px;margin:0 auto;display:grid;grid-template-columns:1fr 1.5fr;gap:6rem;align-items:start;border-bottom:1px solid var(--border2);}
+    .story-sidebar{}
+    .story-heading{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3.5rem);font-weight:700;color:var(--white);line-height:1.1;margin-top:1rem;}
+    .story-photo{margin-top:2rem;border-radius:4px;overflow:hidden;background:var(--bg3);border:1px solid var(--border);aspect-ratio:4/5;}
+    .story-photo-placeholder{width:100%;height:100%;min-height:320px;background:linear-gradient(160deg,var(--bg3),var(--burgundy) 60%,var(--terracotta));display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:5rem;font-weight:700;color:rgba(212,168,75,0.25);}
+    .story-content{}
+    .story-text{font-size:0.95rem;line-height:1.9;color:rgba(245,236,215,0.65);margin-bottom:1.25rem;}
+    .story-text strong{color:var(--cream);font-weight:600;}
+    .story-highlights{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:2rem;}
+    .story-hl{border-left:2px solid var(--terracotta);padding-left:1rem;}
+    .story-hl-title{font-size:0.88rem;font-weight:600;color:var(--cream);}
+    .story-hl-sub{font-size:0.78rem;color:var(--gray);margin-top:0.2rem;}
 
-    /* ELEVATOR PITCH */
-    .elevator{background:var(--teal);padding:3rem 2rem;}
-    .elevator-inner{max-width:900px;margin:0 auto;text-align:center;}
-    .elevator-label{font-size:0.75rem;letter-spacing:3px;text-transform:uppercase;color:var(--primary);font-weight:700;margin-bottom:1rem;}
-    .elevator-text{font-family:'Playfair Display',serif;font-size:clamp(1.1rem,2.5vw,1.5rem);font-style:italic;line-height:1.8;color:var(--primary);font-weight:700;}
-
-    /* ABOUT GRID */
-    .about-section{padding:5rem 2rem;max-width:1200px;margin:0 auto;}
-    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start;}
-    .section-tag{display:inline-block;background:rgba(0,212,170,0.1);color:var(--teal);padding:0.4rem 1rem;border-radius:50px;font-size:0.8rem;font-weight:600;letter-spacing:1px;margin-bottom:1rem;}
-    .section-title{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4vw,2.8rem);font-weight:900;margin-bottom:1.5rem;color:var(--primary);}
-    .about-text p{font-size:1rem;line-height:1.9;color:#444;margin-bottom:1.2rem;}
-    .about-text strong{color:var(--primary);}
-    .highlights{display:flex;flex-direction:column;gap:1rem;margin-top:1.5rem;}
-    .highlight{display:flex;align-items:flex-start;gap:1rem;background:#fff;border-radius:12px;padding:1rem 1.2rem;box-shadow:0 2px 12px rgba(0,0,0,0.06);}
-    .highlight-icon{font-size:1.4rem;}
-    .highlight-text strong{display:block;font-size:0.95rem;color:var(--primary);}
-    .highlight-text span{font-size:0.85rem;color:var(--gray);}
-    .photo-wrap{position:relative;display:flex;justify-content:center;flex-direction:column;gap:1.5rem;}
-    .photo-box{width:100%;border-radius:24px;background:linear-gradient(135deg,var(--teal),var(--primary));display:flex;align-items:center;justify-content:center;font-size:6rem;min-height:300px;}
-    .photo-badge{background:var(--orange);color:#fff;padding:1rem 1.5rem;border-radius:16px;text-align:center;font-weight:700;font-size:0.85rem;line-height:1.6;box-shadow:0 8px 24px rgba(245,166,35,0.4);}
-    .photo-badge span{display:block;font-size:1.8rem;font-family:'Playfair Display',serif;}
+    /* TIMELINE */
+    .timeline-section{padding:6rem 3rem;max-width:1300px;margin:0 auto;border-bottom:1px solid var(--border2);}
+    .timeline{margin-top:3rem;position:relative;}
+    .timeline::before{content:'';position:absolute;left:0;top:0;bottom:0;width:1px;background:var(--border);}
+    .timeline-item{padding:0 0 3rem 2.5rem;position:relative;}
+    .timeline-item:last-child{padding-bottom:0;}
+    .timeline-dot{position:absolute;left:-5px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--gold);border:2px solid var(--bg);}
+    .timeline-year{font-size:0.72rem;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:0.5rem;}
+    .timeline-title{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:700;color:var(--white);margin-bottom:0.35rem;}
+    .timeline-org{font-size:0.8rem;color:var(--terracotta-light);font-weight:600;margin-bottom:0.5rem;}
+    .timeline-desc{font-size:0.85rem;color:rgba(245,236,215,0.55);line-height:1.7;max-width:600px;}
 
     /* ROLES */
-    .roles-section{background:#fff;padding:5rem 2rem;}
-    .roles-inner{max-width:1200px;margin:0 auto;}
-    .roles-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem;}
-    .role-card{background:var(--light);border-radius:16px;padding:1.5rem;border-left:4px solid var(--teal);transition:transform 0.3s;}
-    .role-card:hover{transform:translateY(-4px);}
-    .role-icon{font-size:1.8rem;margin-bottom:0.75rem;}
-    .role-title{font-size:0.95rem;font-weight:700;color:var(--primary);margin-bottom:0.25rem;}
-    .role-org{font-size:0.8rem;color:var(--teal);font-weight:600;margin-bottom:0.5rem;}
-    .role-desc{font-size:0.82rem;color:var(--gray);line-height:1.6;}
+    .roles-section{background:var(--bg2);padding:6rem 3rem;border-bottom:1px solid var(--border2);}
+    .roles-inner{max-width:1300px;margin:0 auto;}
+    .roles-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border2);margin-top:3rem;}
+    .role-card{background:var(--bg2);padding:2rem;transition:background 0.3s;}
+    .role-card:hover{background:var(--bg3);}
+    .role-org{font-size:0.72rem;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:0.75rem;}
+    .role-title{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:700;color:var(--white);margin-bottom:0.35rem;}
+    .role-period{font-size:0.78rem;color:var(--terracotta-light);margin-bottom:0.75rem;}
+    .role-desc{font-size:0.83rem;color:rgba(245,236,215,0.5);line-height:1.7;}
 
     /* SERVICES */
-    .services-section{padding:5rem 2rem;max-width:1200px;margin:0 auto;}
-    .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:3rem;}
-    .service-card{background:#fff;border-radius:20px;padding:2rem;box-shadow:0 4px 20px rgba(0,0,0,0.06);text-align:center;transition:transform 0.3s;}
-    .service-card:hover{transform:translateY(-4px);}
-    .service-icon{font-size:2.5rem;margin-bottom:1rem;}
-    .service-title{font-size:1rem;font-weight:700;color:var(--primary);margin-bottom:0.75rem;}
-    .service-desc{font-size:0.88rem;color:var(--gray);line-height:1.7;margin-bottom:1.2rem;}
-    .service-price{display:inline-block;background:rgba(0,212,170,0.1);color:var(--teal);padding:0.3rem 1rem;border-radius:50px;font-size:0.8rem;font-weight:600;}
-
-    /* CERTIFICATES */
-    .certs-section{background:var(--primary);padding:5rem 2rem;}
-    .certs-inner{max-width:1200px;margin:0 auto;}
-    .certs-inner .section-title{color:var(--white);}
-    .certs-inner .section-tag{background:rgba(0,212,170,0.15);}
-    .certs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem;}
-    .cert-card{background:rgba(255,255,255,0.05);border:1px solid rgba(0,212,170,0.2);border-radius:16px;padding:1.5rem;transition:all 0.3s;}
-    .cert-card:hover{background:rgba(255,255,255,0.08);border-color:var(--teal);}
-    .cert-icon{font-size:2rem;margin-bottom:1rem;}
-    .cert-name{font-size:0.95rem;font-weight:700;color:var(--white);margin-bottom:0.25rem;}
-    .cert-issuer{font-size:0.8rem;color:var(--teal);font-weight:600;margin-bottom:0.5rem;}
-    .cert-date{font-size:0.75rem;color:rgba(255,255,255,0.5);}
-    .cert-link{display:inline-block;margin-top:0.75rem;font-size:0.78rem;color:var(--teal);text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s;}
-    .cert-link:hover{border-color:var(--teal);}
+    .services-section{padding:6rem 3rem;max-width:1300px;margin:0 auto;border-bottom:1px solid var(--border2);}
+    .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border2);margin-top:3rem;}
+    .service-card{background:var(--bg2);padding:2.5rem;transition:background 0.3s;}
+    .service-card:hover{background:var(--bg3);}
+    .service-label{font-size:0.72rem;letter-spacing:2px;text-transform:uppercase;color:var(--terracotta);font-weight:600;margin-bottom:1rem;}
+    .service-title{font-family:'Cormorant Garamond',serif;font-size:1.35rem;font-weight:700;color:var(--white);margin-bottom:0.75rem;}
+    .service-desc{font-size:0.85rem;color:rgba(245,236,215,0.55);line-height:1.7;margin-bottom:1.5rem;}
+    .service-cta{font-size:0.78rem;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--gold);text-decoration:none;border-bottom:1px solid var(--gold);padding-bottom:2px;}
 
     /* TESTIMONIAL */
-    .testimonial-section{padding:5rem 2rem;background:var(--light);}
-    .testimonial-inner{max-width:900px;margin:0 auto;text-align:center;}
-    .testimonial-card{background:#fff;border-radius:24px;padding:3rem;box-shadow:0 8px 40px rgba(0,0,0,0.08);margin-top:3rem;position:relative;}
-    .testimonial-card::before{content:'"';font-family:'Playfair Display',serif;font-size:8rem;color:rgba(0,212,170,0.1);position:absolute;top:-20px;left:30px;line-height:1;}
-    .testimonial-text{font-family:'Playfair Display',serif;font-size:1.2rem;font-style:italic;line-height:1.8;color:var(--primary);margin-bottom:2rem;}
-    .testimonial-author{display:flex;align-items:center;justify-content:center;gap:1rem;}
-    .author-avatar{width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,var(--teal),var(--primary));display:flex;align-items:center;justify-content:center;font-size:1.5rem;}
-    .author-name{font-weight:700;font-size:1rem;color:var(--primary);}
-    .author-role{font-size:0.82rem;color:var(--gray);}
+    .testimonial{padding:6rem 3rem;max-width:900px;margin:0 auto;text-align:center;}
+    .quote-mark{font-family:'Cormorant Garamond',serif;font-size:6rem;line-height:0.5;color:var(--terracotta);opacity:0.4;display:block;margin-bottom:1.5rem;}
+    .quote-text{font-family:'Cormorant Garamond',serif;font-size:clamp(1.2rem,2.5vw,1.65rem);font-style:italic;line-height:1.7;color:var(--cream2);margin-bottom:2rem;}
+    .quote-author{font-size:0.88rem;font-weight:600;color:var(--gold);}
+    .quote-role{font-size:0.78rem;color:var(--gray);margin-top:0.25rem;}
 
     /* STATS */
-    .stats{background:var(--teal);padding:3rem 2rem;}
-    .stats-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;text-align:center;}
-    .stat-num{font-family:'Playfair Display',serif;font-size:2.5rem;font-weight:900;color:var(--primary);}
-    .stat-label{font-size:0.8rem;color:rgba(10,10,46,0.7);margin-top:0.25rem;font-weight:600;letter-spacing:1px;text-transform:uppercase;}
-
-    /* TUTOR */
-    .tutor-section{padding:5rem 2rem;max-width:1200px;margin:0 auto;}
-    .tutor-card{background:#fff;border-radius:24px;padding:2.5rem;box-shadow:0 4px 20px rgba(0,0,0,0.06);}
-    .tutor-card h3{font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:900;color:var(--primary);margin-bottom:0.5rem;}
-    .tutor-card p{font-size:0.95rem;color:var(--gray);line-height:1.8;margin-bottom:2rem;}
-    .tutor-links{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-bottom:2rem;}
-    .tutor-link{display:flex;align-items:center;gap:0.75rem;background:var(--light);border-radius:14px;padding:1rem 1.2rem;text-decoration:none;color:var(--primary);font-weight:600;font-size:0.9rem;transition:all 0.3s;border:2px solid transparent;}
-    .tutor-link:hover{border-color:var(--teal);}
-    .tutor-link span{font-size:0.75rem;color:var(--gray);display:block;font-weight:400;}
-    .gumroad-btn{display:inline-flex;align-items:center;gap:0.75rem;background:var(--teal);color:var(--primary);padding:0.85rem 2rem;border-radius:50px;text-decoration:none;font-weight:700;font-size:0.95rem;transition:all 0.3s;}
-    .gumroad-btn:hover{background:var(--orange);}
+    .stats{background:var(--burgundy);padding:4rem 3rem;position:relative;overflow:hidden;}
+    .stats::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:linear-gradient(135deg,rgba(196,99,58,0.2),transparent 60%);}
+    .stats-inner{max-width:1300px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;position:relative;z-index:1;text-align:center;}
+    .stat-num{font-family:'Cormorant Garamond',serif;font-size:3rem;font-weight:700;color:var(--gold);display:block;}
+    .stat-label{font-size:0.72rem;letter-spacing:2px;text-transform:uppercase;color:rgba(245,236,215,0.65);margin-top:0.5rem;}
 
     /* CTA */
-    .cta-section{background:var(--primary);padding:5rem 2rem;text-align:center;}
-    .cta-section h2{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4vw,3rem);font-weight:900;color:var(--white);margin-bottom:1rem;}
-    .cta-section p{color:rgba(255,255,255,0.7);font-size:1rem;margin-bottom:2rem;}
+    .cta{background:var(--bg3);border-top:1px solid var(--border2);padding:5rem 3rem;text-align:center;}
+    .cta h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3.5rem);font-weight:700;color:var(--white);margin-bottom:1rem;}
+    .cta p{font-size:0.95rem;color:rgba(245,236,215,0.55);max-width:500px;margin:0 auto 2rem;line-height:1.8;}
     .cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;}
-    .btn-primary{background:var(--teal);color:var(--primary);padding:0.85rem 2rem;border-radius:50px;text-decoration:none;font-weight:700;font-size:0.95rem;transition:all 0.3s;}
-    .btn-primary:hover{background:var(--orange);}
-    .btn-outline{border:2px solid rgba(255,255,255,0.3);color:var(--white);padding:0.85rem 2rem;border-radius:50px;text-decoration:none;font-weight:600;font-size:0.95rem;transition:all 0.3s;}
-    .btn-outline:hover{border-color:var(--teal);color:var(--teal);}
 
-    /* CONTACT LINKS */
-    .contact-links{background:rgba(255,255,255,0.05);border-radius:16px;padding:1.5rem 2rem;display:flex;flex-wrap:wrap;gap:1.5rem;align-items:center;justify-content:center;margin-top:2rem;}
-    .contact-link{display:flex;align-items:center;gap:0.5rem;color:rgba(255,255,255,0.8);text-decoration:none;font-size:0.9rem;transition:color 0.3s;}
-    .contact-link:hover{color:var(--teal);}
+    /* SOCIAL */
+    .social-strip{background:var(--bg2);border-top:1px solid var(--border2);padding:1.5rem 3rem;}
+    .social-strip-inner{max-width:1300px;margin:0 auto;display:flex;justify-content:center;gap:2.5rem;flex-wrap:wrap;}
+    .social-link{display:flex;align-items:center;gap:0.6rem;color:rgba(245,236,215,0.45);text-decoration:none;font-size:0.8rem;font-weight:500;transition:color 0.3s;letter-spacing:0.5px;}
+    .social-link:hover{color:var(--gold);}
+    .social-link svg{width:16px;height:16px;fill:currentColor;flex-shrink:0;}
 
-    footer{background:var(--primary);color:rgba(255,255,255,0.5);text-align:center;padding:2rem;font-size:0.9rem;border-top:1px solid rgba(255,255,255,0.05);}
-    footer span{color:var(--teal);}
+    /* FOOTER */
+    footer{background:var(--bg);padding:3rem;border-top:1px solid var(--border2);}
+    .footer-inner{max-width:1300px;margin:0 auto;display:grid;grid-template-columns:1fr auto;align-items:center;gap:2rem;}
+    .footer-logo{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:700;color:var(--gold);}
+    .footer-tagline{font-size:0.78rem;color:var(--gray);margin-top:0.25rem;}
+    .footer-links{display:flex;gap:2rem;flex-wrap:wrap;}
+    .footer-links a{font-size:0.8rem;color:rgba(245,236,215,0.5);text-decoration:none;transition:color 0.3s;}
+    .footer-links a:hover{color:var(--gold);}
+    .footer-bottom{max-width:1300px;margin:2rem auto 0;padding-top:1.5rem;border-top:1px solid var(--border2);display:flex;justify-content:space-between;align-items:center;font-size:0.75rem;color:rgba(245,236,215,0.3);}
+
+    @media(max-width:1024px){.story{grid-template-columns:1fr;gap:3rem;}.roles-grid{grid-template-columns:1fr 1fr;}.services-grid{grid-template-columns:1fr;}}
+    @media(max-width:768px){nav{padding:1rem 1.5rem;}.nav-links,.nav-cta{display:none;}.story,.timeline-section,.services-section,.roles-section,.cta{padding:4rem 1.5rem;}.stats-inner{grid-template-columns:repeat(2,1fr);}.roles-grid{grid-template-columns:1fr;}.footer-inner{grid-template-columns:1fr;}.story-highlights{grid-template-columns:1fr;}}
   </style>
 </head>
 <body>
 
 <nav>
-  <div class="nav-logo">Regan Ayiecho</div>
+  <a href="index.html" class="nav-logo">Regan Ayiecho</a>
   <ul class="nav-links">
     <li><a href="index.html">Home</a></li>
     <li><a href="about.html" class="active">About</a></li>
@@ -156,284 +129,242 @@
     <li><a href="portfolio.html">Portfolio</a></li>
     <li><a href="contact.html">Contact</a></li>
   </ul>
+  <a href="contact.html" class="nav-cta">Hire Me</a>
 </nav>
 
-<!-- PAGE HERO -->
 <div class="page-hero">
-  <span class="page-hero-tag">Kisumu, Kenya · Kigali, Rwanda</span>
-  <h1>Regan Odhiambo <span>Ayiecho</span></h1>
-  <p>Mastercard Foundation Scholar · Software Engineer · AI Specialist · Community Leader</p>
-</div>
-
-<!-- ELEVATOR PITCH -->
-<div class="elevator">
-  <div class="elevator-inner">
-    <div class="elevator-label">⚡ Elevator Pitch</div>
-    <p class="elevator-text">"I am Regan Odhiambo Ayiecho, a Mastercard Foundation Scholar pursuing a Bachelor's degree in Software Engineering at the African Leadership University in Kigali, Rwanda. With hands-on experience in web development, AI tools, mathematics education and community leadership across organizations like Young Africans Network, Eaal Foundation and Nuruteck, I bring both technical skills and proven human impact to everything I do. I build technology, I build people and I build Africa."</p>
+  <div class="page-hero-inner">
+    <div class="section-label">My Story</div>
+    <h1>Regan Odhiambo<br><span>Ayiecho</span></h1>
+    <p class="page-hero-sub">Founder &middot; Software Engineer in Training &middot; Mastercard Foundation Scholar &middot; Community Builder from Kisumu, Kenya</p>
   </div>
 </div>
 
-<!-- ABOUT -->
-<div class="about-section">
-  <div class="about-grid">
-    <div class="about-text">
-      <span class="section-tag">My Story</span>
-      <h2 class="section-title">Who I Am</h2>
-      <p>I am <strong>Regan Odhiambo Ayiecho</strong>, born and raised in <strong>Kisumu, Kenya</strong> — driven by an unshakeable belief that African youth deserve access to world-class opportunities through technology and education.</p>
-      <p>As a <strong>Mastercard Foundation Scholar</strong> at the African Leadership University, I am pursuing a Bachelor's degree in Software Engineering while simultaneously building real-world impact. I am a freelance web developer building websites for startups using AI-assisted tools, an ALX-certified AI specialist and an online tutor reaching students across Africa.</p>
-      <p>From teaching Mathematics at St. Joseph Ng'ula Primary School to mentoring scholarship seekers at Eaal Foundation, co-founding Young Africans Network and leading marketing at Nuruteck — my journey is defined by service, persistence and purpose.</p>
-      <div class="highlights">
-        <div class="highlight">
-          <div class="highlight-icon">🎓</div>
-          <div class="highlight-text">
-            <strong>African Leadership University</strong>
-            <span>BSc Software Engineering · Mastercard Foundation Scholar · Kigali, Rwanda</span>
-          </div>
-        </div>
-        <div class="highlight">
-          <div class="highlight-icon">🤖</div>
-          <div class="highlight-text">
-            <strong>ALX Africa — AI Career Essentials</strong>
-            <span>Certified AI Specialist · Completed April 2026</span>
-          </div>
-        </div>
-        <div class="highlight">
-          <div class="highlight-icon">🌍</div>
-          <div class="highlight-text">
-            <strong>Co-Founder · Young Africans Network</strong>
-            <span>Scholarship applications, career guidance & digital skills</span>
-          </div>
-        </div>
-        <div class="highlight">
-          <div class="highlight-icon">💡</div>
-          <div class="highlight-text">
-            <strong>Mentor · Eaal Foundation</strong>
-            <span>2+ years mentoring students in scholarship applications</span>
-          </div>
-        </div>
-      </div>
+<div class="story">
+  <div class="story-sidebar">
+    <div class="section-label">Who I Am</div>
+    <h2 class="story-heading">Building Africa&rsquo;s digital future from the inside.</h2>
+    <div class="story-photo">
+      <div class="story-photo-placeholder">RA</div>
     </div>
-    <div class="photo-wrap">
-      <div class="photo-box">🌟</div>
-      <div class="photo-badge">
-        <span>Mastercard</span>
-        Foundation Scholar<br>ALU Kigali · 2024–Present
+  </div>
+  <div class="story-content">
+    <p class="story-text">I am <strong>Regan Odhiambo Ayiecho</strong>, born and raised in <strong>Kisumu, Kenya</strong>. I am a Mastercard Foundation Scholar pursuing a Bachelor&rsquo;s degree in Software Engineering at the African Leadership University in Kigali, Rwanda.</p>
+    <p class="story-text">My journey into technology was not a straight line. I taught Mathematics at St. Joseph Ng&rsquo;ula Primary School, mentored hundreds of students through scholarship applications at Eaal Foundation, and then built a pan-African platform from zero budget. Every step taught me something different about people, problems and persistence.</p>
+    <p class="story-text">Today I am co-founder and CTO of <strong>Young Africans Network</strong> — a platform serving members across 12 African countries built on GitHub Pages and Firebase with no hosting cost. I am also building <strong>AfriMeet</strong>, Africa&rsquo;s own video conferencing platform designed to replace Zoom and Google Meet for the continent&rsquo;s 500,000+ NGOs, universities and organizations.</p>
+    <p class="story-text">I believe Africa should own its digital infrastructure. My goal is to build technology that keeps African money, data and value on the continent.</p>
+    <div class="story-highlights">
+      <div class="story-hl">
+        <div class="story-hl-title">African Leadership University</div>
+        <div class="story-hl-sub">BSc Software Engineering &middot; Kigali, Rwanda</div>
       </div>
-      <div class="photo-badge" style="background:var(--teal);color:var(--primary);">
-        <span>ALX</span>
-        Certified AI Specialist<br>April 2026
+      <div class="story-hl">
+        <div class="story-hl-title">Mastercard Foundation</div>
+        <div class="story-hl-sub">Full Scholarship &middot; 2024&ndash;Present</div>
+      </div>
+      <div class="story-hl">
+        <div class="story-hl-title">Young Africans Network</div>
+        <div class="story-hl-sub">Co-Founder &middot; 12 Countries</div>
+      </div>
+      <div class="story-hl">
+        <div class="story-hl-title">ALX Africa</div>
+        <div class="story-hl-sub">AI Career Essentials &middot; Certified 2026</div>
       </div>
     </div>
   </div>
 </div>
 
-<!-- ROLES -->
+<div class="timeline-section">
+  <div class="section-label">Journey</div>
+  <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3rem);font-weight:700;color:var(--white);margin-top:0.75rem;">My Timeline</h2>
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-year">2024 &ndash; Present</div>
+      <div class="timeline-title">Mastercard Foundation Scholar</div>
+      <div class="timeline-org">African Leadership University &middot; Kigali, Rwanda</div>
+      <div class="timeline-desc">Pursuing BSc Software Engineering on a full Mastercard Foundation Scholarship. Delivering AI masterclasses, leading team projects and building real-world platforms.</div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-year">2024 &ndash; Present</div>
+      <div class="timeline-title">Co-Founder &amp; CTO</div>
+      <div class="timeline-org">Young Africans Network</div>
+      <div class="timeline-desc">Built and manage a full-stack community platform serving members across 12 African countries. Zero hosting budget. Real-time messaging, training programs, mentorship matching and admin CMS.</div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-year">2026</div>
+      <div class="timeline-title">AI Career Essentials 2.0</div>
+      <div class="timeline-org">ALX Africa</div>
+      <div class="timeline-desc">Completed intensive 6-week AI certification covering tools, applications and career strategies. Certified April 2026.</div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-year">2024 &ndash; Present</div>
+      <div class="timeline-title">Marketing Lead</div>
+      <div class="timeline-org">Nuruteck Platform</div>
+      <div class="timeline-desc">Leading digital marketing strategy for an African digital skills training platform.</div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-year">2022 &ndash; 2024</div>
+      <div class="timeline-title">Mentor</div>
+      <div class="timeline-org">Eaal Foundation</div>
+      <div class="timeline-desc">Mentored students across Africa in scholarship applications, personal statements and interview preparation over 2+ years.</div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-year">2023</div>
+      <div class="timeline-title">Mathematics Teacher</div>
+      <div class="timeline-org">St. Joseph Ng&rsquo;ula Primary School</div>
+      <div class="timeline-desc">Taught Mathematics for one year, building strong communication, patience and teaching skills that inform everything I do today.</div>
+    </div>
+  </div>
+</div>
+
 <div class="roles-section">
   <div class="roles-inner">
-    <span class="section-tag">Experience</span>
-    <h2 class="section-title">Roles & Responsibilities</h2>
+    <div class="section-label">Experience</div>
+    <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3rem);font-weight:700;color:var(--white);margin-top:0.75rem;">Roles &amp; Organizations</h2>
     <div class="roles-grid">
       <div class="role-card">
-        <div class="role-icon">💻</div>
-        <div class="role-title">Freelance Web Developer</div>
-        <div class="role-org">Self-Employed · 2024–Present</div>
-        <div class="role-desc">Building websites for startups using AI-assisted development tools. Delivered projects including Blizcity Music Platform and Goal-Driven Elabers.</div>
+        <div class="role-org">ALU &middot; Kigali</div>
+        <div class="role-title">Software Engineering Student</div>
+        <div class="role-period">2024 &ndash; Present</div>
+        <div class="role-desc">Mastercard Foundation Scholar pursuing BSc Software Engineering at Africa&rsquo;s leading university for entrepreneurship and leadership.</div>
       </div>
       <div class="role-card">
-        <div class="role-icon">📢</div>
+        <div class="role-org">Young Africans Network</div>
+        <div class="role-title">Co-Founder &amp; CTO</div>
+        <div class="role-period">2024 &ndash; Present</div>
+        <div class="role-desc">Built the entire platform from zero. Managing technical architecture, admin systems, training programs and a team of department heads across Africa.</div>
+      </div>
+      <div class="role-card">
+        <div class="role-org">ALX Africa</div>
+        <div class="role-title">AI Specialist</div>
+        <div class="role-period">Certified April 2026</div>
+        <div class="role-desc">Certified AI Career Essentials specialist. Teaching AI concepts to students across Africa and delivering masterclasses at ALU.</div>
+      </div>
+      <div class="role-card">
+        <div class="role-org">Nuruteck Platform</div>
         <div class="role-title">Marketing Lead</div>
-        <div class="role-org"><a href="https://www.nurutek.com" target="_blank" style="color:var(--teal);">Nuruteck Platform</a> · 2024–Present</div>
-        <div class="role-desc">Leading digital marketing strategy for Nuruteck, a platform offering digital training and skills development across Africa.</div>
+        <div class="role-period">2024 &ndash; Present</div>
+        <div class="role-desc">Leading digital marketing for an African digital skills training platform — driving audience growth and brand strategy.</div>
       </div>
       <div class="role-card">
-        <div class="role-icon">🎓</div>
+        <div class="role-org">Eaal Foundation</div>
         <div class="role-title">Mentor</div>
-        <div class="role-org">Eaal Foundation · 2 Years</div>
-        <div class="role-desc">Mentoring students in scholarship applications at scale — helping young Africans access life-changing educational opportunities worldwide.</div>
+        <div class="role-period">2022 &ndash; 2024 &middot; 2 Years</div>
+        <div class="role-desc">Mentored students through scholarship applications, helping young Africans access life-changing educational opportunities worldwide.</div>
       </div>
       <div class="role-card">
-        <div class="role-icon">🌍</div>
-        <div class="role-title">Co-Founder</div>
-        <div class="role-org"><a href="https://chat.whatsapp.com/LjJ64Gy4GVoJDjpyEVGFIO" target="_blank" style="color:var(--teal);text-decoration:none;">Young Africans Network</a> · 2023–Present</div>
-        <div class="role-desc">Co-founded an initiative uniting young Africans for scholarship applications, career guidance, public speaking and digital skills training.</div>
-      </div>
-      <div class="role-card">
-        <div class="role-icon">➗</div>
-        <div class="role-title">Mathematics Teacher</div>
-        <div class="role-org">St. Joseph Ng'ula Primary · 1 Year</div>
-        <div class="role-desc">Taught Mathematics to primary school students, developing strong communication and pedagogical skills that now inform my tutoring approach.</div>
-      </div>
-      <div class="role-card">
-        <div class="role-icon">🎬</div>
+        <div class="role-org">Eden Inspirations</div>
         <div class="role-title">Founding Team Member</div>
-        <div class="role-org"><a href="https://www.youtube.com/@edeninspirations" target="_blank" style="color:var(--teal);">Eden Inspirations</a> · YouTube Channel</div>
-        <div class="role-desc">Part of the founding team of Eden Inspirations, a YouTube channel hosting weekly guest interviews sharing journeys to success and inspiring African youth.</div>
+        <div class="role-period">YouTube Channel</div>
+        <div class="role-desc">Part of the founding team of a YouTube channel hosting weekly guest interviews inspiring African youth to pursue their purpose.</div>
       </div>
     </div>
   </div>
 </div>
 
-<!-- SERVICES -->
 <div class="services-section">
-  <span class="section-tag">What I Offer</span>
-  <h2 class="section-title">Services</h2>
+  <div class="section-label">What I Offer</div>
+  <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3rem);font-weight:700;color:var(--white);margin-top:0.75rem;">Services</h2>
   <div class="services-grid">
     <div class="service-card">
-      <div class="service-icon">🌐</div>
+      <div class="service-label">Development</div>
       <div class="service-title">Website Development</div>
-      <div class="service-desc">I build clean, modern and responsive websites for startups and individuals using the latest AI-assisted development tools. From design to deployment.</div>
-      <a href="https://wa.me/254791887609?text=Hi%20Regan%2C%20I%20would%20like%20to%20hire%20you%20for%20a%20website%20project" target="_blank" class="service-price">💬 Available for Hire</a>
+      <div class="service-desc">Clean, modern and responsive websites for startups and individuals using AI-assisted development. From design to deployment on GitHub Pages or Vercel.</div>
+      <a href="https://wa.me/254791887609?text=Hi%20Regan%2C%20I%20would%20like%20to%20hire%20you%20for%20a%20website" target="_blank" class="service-cta">Available for Hire</a>
     </div>
     <div class="service-card">
-      <div class="service-icon">🤖</div>
-      <div class="service-title">AI & Maths Tutoring</div>
-      <div class="service-desc">Online tutoring sessions in Artificial Intelligence concepts and Mathematics — breaking down complex topics into simple, practical lessons on YouTube and one-on-one.</div>
-      <span class="service-price">Buy lessons on Gumroad</span>
+      <div class="service-label">Education</div>
+      <div class="service-title">AI &amp; Maths Tutoring</div>
+      <div class="service-desc">One-on-one and self-paced tutoring in Artificial Intelligence and Mathematics. Practical, accessible lessons for students across Africa via YouTube and direct sessions.</div>
+      <a href="https://ayiecho.gumroad.com/l/hndnyg" target="_blank" class="service-cta">Buy Lessons on Gumroad</a>
     </div>
     <div class="service-card">
-      <div class="service-icon">🏆</div>
+      <div class="service-label">Guidance</div>
       <div class="service-title">Scholarship Coaching</div>
-      <div class="service-desc">Drawing from 2+ years of mentorship at Eaal Foundation and personal experience as a Mastercard Foundation Scholar — I guide students through scholarship applications step by step.</div>
-      <span class="service-price"><span class="service-price"><a href="https://wa.me/254791887609?text=Hi%20Regan%2C%20I%20would%20like%20to%20book%20a%20session%20with%20you" target="_blank" class="service-price">📱 Book via WhatsApp</a></span></span>
+      <div class="service-desc">Expert guidance on scholarship applications from a Mastercard Foundation Scholar with 2+ years of mentoring experience. From finding opportunities to writing your statement.</div>
+      <a href="https://wa.me/254791887609?text=Hi%20Regan%2C%20I%20need%20scholarship%20coaching" target="_blank" class="service-cta">Book via WhatsApp</a>
     </div>
   </div>
 </div>
 
-<!-- CERTIFICATES -->
-<div class="certs-section">
-  <div class="certs-inner">
-    <span class="section-tag">Credentials</span>
-    <h2 class="section-title">Certificates & Training</h2>
-    <div class="certs-grid">
-      <div class="cert-card">
-        <div class="cert-icon">🤖</div>
-        <div class="cert-name">AI Career Essentials 2.0</div>
-        <div class="cert-issuer">ALX Africa</div>
-        <div class="cert-date">Completed · April 14, 2026</div>
-        <a href="https://savanna.alxafrica.com/certificates/Tyn2m3Jchr" target="_blank" class="cert-link">Verify Certificate →</a>
-      </div>
-      <div class="cert-card">
-        <div class="cert-icon">🎓</div>
-        <div class="cert-name">Professional Foundations</div>
-        <div class="cert-issuer">African Leadership University</div>
-        <div class="cert-date">Completed · 2025</div>
-      </div>
-      <div class="cert-card">
-        <div class="cert-icon">⚖️</div>
-        <div class="cert-name">Healers of Africa Program</div>
-        <div class="cert-issuer">PLO Lumumba Foundation</div>
-        <div class="cert-date">3 Months Training · Completed</div>
-      </div>
-      <div class="cert-card">
-        <div class="cert-icon">🚀</div>
-        <div class="cert-name">Upcoming Leaders Program</div>
-        <div class="cert-issuer">Upcoming Leaders of Kenya</div>
-        <div class="cert-date">3 Months Training · Completed</div>
-      </div>
-      <div class="cert-card">
-        <div class="cert-icon">💳</div>
-        <div class="cert-name">Mastercard Foundation Scholar</div>
-        <div class="cert-issuer">Mastercard Foundation · ALU</div>
-        <div class="cert-date">2024–Present · Full Scholarship</div>
-      </div>
-      <div class="cert-card">
-        <div class="cert-icon">📊</div>
-        <div class="cert-name">BSc Software Engineering</div>
-        <div class="cert-issuer">African Leadership University</div>
-        <div class="cert-date">In Progress · 2024–Present</div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- TESTIMONIAL -->
-<div class="testimonial-section">
-  <div class="testimonial-inner">
-    <span class="section-tag">What People Say</span>
-    <h2 class="section-title">Testimonial</h2>
-    <div class="testimonial-card">
-      <p class="testimonial-text">"Regan is one of the most dedicated, disciplined and purpose-driven young people I have had the privilege of working with. His commitment to education, his students and his community is truly exceptional. He brings energy, intelligence and heart to everything he does."</p>
-      <div class="testimonial-author">
-        <div class="author-avatar">👨‍💼</div>
-        <div>
-          <div class="author-name">Mr. Isaac Adede</div>
-          <div class="author-role">Head of Institution · St. Joseph Ng'ula Primary School</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- STATS -->
 <div class="stats">
   <div class="stats-inner">
-    <div>
-      <div class="stat-num">2+</div>
+    <div class="stat-item" style="text-align:center;">
+      <span class="stat-num">12</span>
+      <div class="stat-label">African Countries</div>
+    </div>
+    <div class="stat-item" style="text-align:center;">
+      <span class="stat-num">2+</span>
       <div class="stat-label">Years Mentoring</div>
     </div>
-    <div>
-      <div class="stat-num">3+</div>
-      <div class="stat-label">Websites Built</div>
-    </div>
-    <div>
-      <div class="stat-num">6+</div>
+    <div class="stat-item" style="text-align:center;">
+      <span class="stat-num">6+</span>
       <div class="stat-label">Organizations</div>
     </div>
-    <div>
-      <div class="stat-num">2040</div>
+    <div class="stat-item" style="text-align:center;">
+      <span class="stat-num">2040</span>
       <div class="stat-label">Impact Goal</div>
     </div>
   </div>
 </div>
 
-<!-- TUTOR SECTION -->
-<div class="tutor-section">
-  <div class="tutor-card">
-    <h3>🎓 Online AI & Maths Tutor</h3>
-    <p>I teach AI and Mathematics to students across Africa through YouTube and TikTok — making quality education accessible, practical and engaging. Purchase my lessons on Gumroad and start your journey today!</p>
-    <div class="tutor-links">
-      <a href="https://www.youtube.com/@Prof.AyiechoRegan" target="_blank" class="tutor-link">
-        <div>▶️</div>
-        <div><strong>YouTube</strong><span>AI & Maths Tutorials</span></div>
-      </a>
-      <a href="https://www.tiktok.com/@regancomedian" target="_blank" class="tutor-link">
-        <div>🎵</div>
-        <div><strong>TikTok</strong><span>Quick Lessons & Tips</span></div>
-      </a>
-      <a href="https://www.linkedin.com/in/reganayiecho" target="_blank" class="tutor-link">
-        <div>💼</div>
-        <div><strong>LinkedIn</strong><span>Professional Profile</span></div>
-      </a>
-    </div>
-    <a href="https://ayiecho.gumroad.com/l/hndnyg" target="_blank" class="gumroad-btn">🛒 Buy My Lessons on Gumroad</a>
+<div class="testimonial">
+  <span class="quote-mark">&ldquo;</span>
+  <p class="quote-text">Regan is one of the most dedicated, disciplined and purpose-driven young people I have had the privilege of working with. His commitment to education, his students and his community is truly exceptional. He brings energy, intelligence and heart to everything he does.</p>
+  <div class="quote-author">Mr. Isaac Adede</div>
+  <div class="quote-role">Head of Institution &middot; St. Joseph Ng&rsquo;ula Primary School</div>
+</div>
+
+<div class="cta">
+  <h2>Let&rsquo;s Connect</h2>
+  <p>Open to collaborations, freelance work, mentorship and meaningful conversations about Africa&rsquo;s future.</p>
+  <div class="cta-btns">
+    <a href="contact.html" class="btn-primary">Get In Touch</a>
+    <a href="https://drive.google.com/file/d/1wx26T_3dHhIlmdoY8n5NzT7QJezS1pwj/view?usp=sharing" target="_blank" class="btn-outline">Download Resume</a>
   </div>
 </div>
 
-<!-- CTA -->
-<div class="cta-section">
-  <h2>Let's Work Together</h2>
-  <p>Looking for a web developer, tutor, scholarship coach or community leader? I am open to collaborations, partnerships and opportunities.</p>
-  <div class="cta-btns">
-    <a href="contact.html" class="btn-primary">Get In Touch</a>
-    <a href="https://drive.google.com/file/d/1wx26T_3dHhIlmdoY8n5NzT7QJezS1pwj/view?usp=sharing" target="_blank" class="btn-outline">⬇️ Download Resume</a>
-  </div>
-  <div class="contact-links">
-    <a href="mailto:odhiamboregan@gmail.com" class="contact-link">📧 odhiamboregan@gmail.com</a>
-    <a href="tel:+254791887609" class="contact-link">📞 +254 791 887 609</a>
-    <a href="https://www.linkedin.com/in/reganayiecho" target="_blank" class="contact-link">💼 linkedin.com/in/reganayiecho</a>
+<div class="social-strip">
+  <div class="social-strip-inner">
+    <a href="https://www.linkedin.com/in/reganayiecho" target="_blank" class="social-link">
+      <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>LinkedIn</a>
+    <a href="https://github.com/rayiecho" target="_blank" class="social-link">
+      <svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>GitHub</a>
+    <a href="https://x.com/REGAN_AYIECHO" target="_blank" class="social-link">
+      <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>X (Twitter)</a>
+    <a href="https://www.youtube.com/@Prof.AyiechoRegan" target="_blank" class="social-link">
+      <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>YouTube</a>
+    <a href="https://www.tiktok.com/@regancomedian" target="_blank" class="social-link">
+      <svg viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>TikTok</a>
+    <a href="mailto:odhiamboregan6440@gmail.com" class="social-link">
+      <svg viewBox="0 0 24 24"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 010 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>Email</a>
   </div>
 </div>
 
 <footer>
-  <div class="social-strip">
-  <a href="https://www.linkedin.com/in/reganayiecho" target="_blank">💼 LinkedIn</a>
-  <a href="https://x.com/REGAN_AYIECHO" target="_blank">🐦 X</a>
-  <a href="https://www.youtube.com/@Prof.AyiechoRegan" target="_blank">▶️ YouTube</a>
-  <a href="https://www.tiktok.com/@regancomedian" target="_blank">🎵 TikTok</a>
-  <a href="https://github.com/rayiecho" target="_blank">💻 GitHub</a>
-  <a href="https://ayiecho.gumroad.com/l/hndnyg" target="_blank">🛒 Gumroad</a>
-</div>
-  <p>© 2026 <span>Regan Ayiecho</span> · Built with purpose · Powered by persistence 🌍</p>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-logo">Regan Ayiecho</div>
+      <div class="footer-tagline">Building technology for Africa &middot; One line of code at a time</div>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 Regan Odhiambo Ayiecho &middot; All rights reserved</span>
+    <span>Built with purpose &middot; Powered by persistence</span>
+  </div>
 </footer>
 
 </body>
