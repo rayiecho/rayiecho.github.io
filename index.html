@@ -374,10 +374,16 @@
 
     /* IMPACT NUMBERS */
     .impact {
-      background: var(--burgundy);
+      background: url('images/hero2.jpeg') center center / cover no-repeat;
       padding: 5rem 3rem;
       position: relative;
       overflow: hidden;
+    }
+    .impact::after {
+      content: '';
+      position: absolute; inset: 0;
+      background: rgba(15,26,17,0.78);
+      z-index: 0;
     }
     .impact::before {
       content: '';
@@ -387,7 +393,7 @@
     .impact-inner {
       max-width: 1300px; margin: 0 auto;
       display: grid; grid-template-columns: repeat(4, 1fr);
-      gap: 2rem; position: relative; z-index: 1;
+      gap: 2rem; position: relative; z-index: 2;
     }
     .impact-item { text-align: center; }
     .impact-num {
@@ -433,10 +439,20 @@
     }
 
     /* TESTIMONIAL */
+    .testimonial-wrap {
+      background: url('images/hero3.jpeg') center top / cover no-repeat;
+      position: relative;
+    }
+    .testimonial-wrap::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: rgba(244,241,232,0.92);
+    }
     .testimonial {
       padding: 6rem 3rem;
       max-width: 900px; margin: 0 auto;
       text-align: center;
+      position: relative; z-index: 1;
     }
     .quote-mark {
       font-family: 'Cormorant Garamond', serif;
@@ -456,12 +472,19 @@
 
     /* CTA */
     .cta {
-      background: var(--bg3);
+      background: url('images/hero4.jpeg') center center / cover no-repeat;
       border-top: 1px solid var(--border2);
       border-bottom: 1px solid var(--border2);
       padding: 6rem 3rem;
       text-align: center;
+      position: relative;
     }
+    .cta::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: rgba(15,26,17,0.80);
+    }
+    .cta h2, .cta p, .cta-btns { position: relative; z-index: 1; }
     .cta h2 {
       font-family: 'Cormorant Garamond', serif;
       font-size: clamp(2.5rem, 5vw, 4.5rem);
@@ -787,12 +810,12 @@
   </div>
 </div>
 
-<div class="testimonial">
+<div class="testimonial-wrap"><div class="testimonial">
   <span class="quote-mark">&ldquo;</span>
   <p class="quote-text">Regan is one of the most dedicated, disciplined and purpose-driven young people I have had the privilege of working with. His commitment to education, his students and his community is truly exceptional.</p>
   <div class="quote-author">Mr. Isaac Adede</div>
   <div class="quote-role">Head of Institution &middot; St. Joseph Ng&rsquo;ula Primary School</div>
-</div>
+</div></div>
 
 <div class="cta">
   <h2>Let&rsquo;s Build<br>Something Great</h2>
