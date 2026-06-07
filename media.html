@@ -91,6 +91,29 @@
     .footer-bottom{max-width:1300px;margin:2rem auto 0;padding-top:1.5rem;border-top:1px solid var(--border2);display:flex;justify-content:space-between;font-size:0.75rem;color:#4A7050;}
 
     @media(max-width:768px){nav{padding:1rem 1.5rem;}.nav-links,.nav-cta{display:none;}.media-section{padding:3rem 1.5rem;}.photos-grid{grid-template-columns:1fr 1fr;}.photos-grid .photo-item:first-child{grid-column:span 2;}.certs-grid,.pitches-grid,.videos-grid{grid-template-columns:1fr;}.footer-inner{grid-template-columns:1fr;}}
+  
+    .ticker {
+      background: var(--burgundy);
+      padding: 0.85rem 0;
+      overflow: hidden; white-space: nowrap;
+      border-top: 1px solid rgba(255,255,255,0.05);
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+    .ticker-inner {
+      display: inline-block;
+      animation: ticker 30s linear infinite;
+    }
+    .ticker-inner span {
+      font-size: 0.72rem; font-weight: 600;
+      letter-spacing: 3px; text-transform: uppercase;
+      color: #F4F1E8;
+      padding: 0 2.5rem;
+    }
+    .ticker-dot {
+      color: #C0392B; font-size: 0.5rem;
+      vertical-align: middle;
+    }
+    @keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
   </style>
 </head>
 <body>
@@ -107,6 +130,26 @@
   </ul>
   <a href="contact.html" class="nav-cta">Hire Me</a>
 </nav>
+<div class="ticker">
+  <div class="ticker-inner">
+    <span>Software Engineering</span><span class="ticker-dot">&bull;</span>
+    <span>Young Africans Network</span><span class="ticker-dot">&bull;</span>
+    <span>AfriMeet</span><span class="ticker-dot">&bull;</span>
+    <span>Mastercard Foundation Scholar</span><span class="ticker-dot">&bull;</span>
+    <span>ALU Kigali</span><span class="ticker-dot">&bull;</span>
+    <span>AI Specialist</span><span class="ticker-dot">&bull;</span>
+    <span>Building for Africa</span><span class="ticker-dot">&bull;</span>
+    <span>Kisumu &rarr; Kigali</span><span class="ticker-dot">&bull;</span>
+    <span>Software Engineering</span><span class="ticker-dot">&bull;</span>
+    <span>Young Africans Network</span><span class="ticker-dot">&bull;</span>
+    <span>AfriMeet</span><span class="ticker-dot">&bull;</span>
+    <span>Mastercard Foundation Scholar</span><span class="ticker-dot">&bull;</span>
+    <span>ALU Kigali</span><span class="ticker-dot">&bull;</span>
+    <span>AI Specialist</span><span class="ticker-dot">&bull;</span>
+    <span>Building for Africa</span><span class="ticker-dot">&bull;</span>
+    <span>Kisumu &rarr; Kigali</span><span class="ticker-dot">&bull;</span>
+  </div>
+</div>
 
 <div class="page-hero">
   <div class="page-hero-inner">
